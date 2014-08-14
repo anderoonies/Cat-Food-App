@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     [self loadInitialData];
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, CGRectGetHeight(self.tabBarController.tabBar.frame), 0.0f);
@@ -40,11 +39,22 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [self setBars];
+    
+    NSLog(@"Allison Hall %f", self.allisonHall.frame.size.width);
+    NSLog(@"hinman hall %f", self.hinmanHall.frame.size.width);
+
+    NSLog(@"plex east %f", self.plexEastHall.frame.size.width);
+    NSLog(@"plex west%f", self.plexWestHall.frame.size.width);
+    NSLog(@"elder hall %f", self.elderHall.frame.size.width);
+    NSLog(@"sargent %f", self.sargentHall.frame.size.width);
+    NSLog(@"willard %f", self.willardHall.frame.size.width);
+    NSLog(@"%hhd",self.elderHall.isOpen);
+
 }
 
 - (void)loadInitialData
 {
-    self.allisonHall.name = @"Allison Hall";
+    self.allisonHall.name = @"Allison";
     self.allisonHall.hours = @[
                                @[
                                    @[@600,@780],
@@ -52,27 +62,27 @@
                                    ],
                                @[
                                    @[@450,@585],
-                                   @[@705,@795],
+                                   @[@675,@795],
                                    @[@1005,@1140]
                                    ],
                                @[
                                    @[@450,@585],
-                                   @[@705,@795],
+                                   @[@675,@795],
                                    @[@1005,@1140]
                                    ],
                                @[
                                    @[@450,@585],
-                                   @[@705,@795],
+                                   @[@675,@795],
                                    @[@1005,@1140]
                                    ],
                                @[
                                    @[@450,@585],
-                                   @[@705,@795],
+                                   @[@675,@795],
                                    @[@1005,@1140]
                                    ],
                                @[
                                    @[@450,@585],
-                                   @[@705,@795],
+                                   @[@675,@795],
                                    @[@1005,@1140]
                                    ],
                                @[
@@ -82,8 +92,10 @@
                                ];
     
     self.allisonHall.isOpen = self.allisonHall.getIsOpen;
+    self.allisonLabel.text = [NSString stringWithFormat:@"%@ %@", self.allisonHall.name, self.allisonHall.timeLeft];
     
-    self.hinmanHall.name = @"Hinman Hall";
+    
+    self.hinmanHall.name = @"Hinman";
     self.hinmanHall.hours =@[
                              @[
                                  @[@0,@0]
@@ -114,6 +126,9 @@
                              ];
     
     self.hinmanHall.isOpen = self.hinmanHall.getIsOpen;
+    self.hinmanLabel.text = [NSString stringWithFormat:@"%@ %@", self.hinmanHall.name, self.hinmanHall.timeLeft];
+
+
     
     self.plexEastHall.name = @"Plex East";
     self.plexEastHall.hours = @[
@@ -131,7 +146,7 @@
                                     ],
                                 @[
                                     @[@645,@795],
-                                    @[@1005,@1140]
+                                    @[@1005,@1200]
                                     ],
                                 @[
                                     @[@645,@795],
@@ -148,6 +163,8 @@
                                 ];
     
     self.plexEastHall.isOpen = self.plexEastHall.getIsOpen;
+    self.plexEastLabel.text = [NSString stringWithFormat:@"%@ %@", self.plexEastHall.name, self.plexEastHall.timeLeft];
+
     
     self.plexWestHall.name = @"Plex West";
     self.plexWestHall.hours = @[
@@ -180,9 +197,9 @@
                                     @[@1200,@1410]
                                     ],
                                 @[
-                                    @[@450,@585],
-                                    @[@675,@795],
-                                    @[@1005,@1140]
+                                    @[@450,@645],
+                                    @[@705,@1005],
+                                    @[@1035,@1140]
                                     ],
                                 @[
                                     @[@450,@585],
@@ -192,9 +209,11 @@
                                 ];
     
     self.plexWestHall.isOpen = self.plexWestHall.getIsOpen;
+    self.plexWestLabel.text = [NSString stringWithFormat:@"%@ %@", self.plexWestHall.name, self.plexWestHall.timeLeft];
+
     
     
-    self.elderHall.name = @"Elder Hall";
+    self.elderHall.name = @"Elder";
     self.elderHall.hours = @[
                              @[
                                  @[@0,@0]
@@ -225,8 +244,10 @@
                              ];
     
     self.elderHall.isOpen = self.elderHall.getIsOpen;
+    self.elderLabel.text = [NSString stringWithFormat:@"%@ %@", self.elderHall.name, self.elderHall.timeLeft];
+
     
-    self.sargentHall.name = @"Sargent Hall";
+    self.sargentHall.name = @"Sargent";
     self.sargentHall.hours = @[
                                @[
                                    @[@660,@840],
@@ -259,8 +280,10 @@
                                ];
     
     self.sargentHall.isOpen = self.sargentHall.getIsOpen;
+    self.sargentLabel.text = [NSString stringWithFormat:@"%@ %@", self.sargentHall.name, self.sargentHall.timeLeft];
+
     
-    self.willardHall.name = @"Willard Hall";
+    self.willardHall.name = @"Willard";
     self.willardHall.hours = @[
                                @[
                                    @[@0,@0]
@@ -290,43 +313,42 @@
                                    ],
                                ];
     self.willardHall.isOpen = self.willardHall.getIsOpen;
+    self.willardLabel.text = [NSString stringWithFormat:@"%@ %@", self.willardHall.name, self.willardHall.timeLeft];
+
+
 }
 
 - (void)setBars
 {
     CGRect frame = self.allisonHall.frame;
     frame = self.allisonHall.frame;
-    frame.size.width = self.allisonHall.frame.size.width*self.allisonHall.newWidth;
+    frame.size.width = 280*self.allisonHall.newWidth;
     self.allisonHall.frame = frame;
     
+    
     frame = self.willardHall.frame;
-    frame = self.willardHall.frame;
-    frame.size.width = self.willardHall.frame.size.width*self.willardHall.newWidth;
+    frame.size.width = 280*self.willardHall.newWidth;
     self.willardHall.frame = frame;
     
+    
     frame = self.plexEastHall.frame;
-    frame = self.plexEastHall.frame;
-    frame.size.width = self.plexEastHall.frame.size.width*self.plexEastHall.newWidth;
+    frame.size.width = 280*self.plexEastHall.newWidth;
     self.plexEastHall.frame = frame;
     
     frame = self.plexWestHall.frame;
-    frame = self.plexWestHall.frame;
-    frame.size.width = self.plexWestHall.frame.size.width*self.plexWestHall.newWidth;
+    frame.size.width = 280*self.plexWestHall.newWidth;
     self.plexWestHall.frame = frame;
     
     frame = self.hinmanHall.frame;
-    frame = self.hinmanHall.frame;
-    frame.size.width = self.hinmanHall.frame.size.width*self.hinmanHall.newWidth;
+    frame.size.width = 280*self.hinmanHall.newWidth;
     self.hinmanHall.frame = frame;
     
     frame = self.elderHall.frame;
-    frame = self.elderHall.frame;
-    frame.size.width = self.elderHall.frame.size.width*self.elderHall.newWidth;
+    frame.size.width = 280*self.elderHall.newWidth;
     self.elderHall.frame = frame;
     
     frame = self.sargentHall.frame;
-    frame = self.sargentHall.frame;
-    frame.size.width = self.sargentHall.frame.size.width*self.sargentHall.newWidth;
+    frame.size.width = 280*self.sargentHall.newWidth;
     self.sargentHall.frame = frame;
     
 }

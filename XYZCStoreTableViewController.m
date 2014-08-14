@@ -7,6 +7,7 @@
 //
 
 #import "XYZCStoreTableViewController.h"
+#import "XYZTimeUtilities.h"
 
 @interface XYZCStoreTableViewController ()
 
@@ -26,12 +27,146 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadInitialData];
+    [super viewDidAppear:NO];
+    XYZTimeUtilities *timer = [[XYZTimeUtilities alloc] init];
+    if (450 <= timer.minutes && timer.minutes <= 645) {
+        self.eqLabel.text = @"Equivalencies: $5.00";
+    } else if (1005 < timer.minutes && timer.minutes <= 1170) {
+        self.eqLabel.text = @"Equivalencies: $9.00";
+    } else
+    self.eqLabel.text = @"Equivalencies: $7.00";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self setBars];
+}
+
+- (void)loadInitialData
+{
+    self.willardCStore.name = @"Willard";
+    self.willardCStore.hours = @[
+                               @[
+                                   @[@0,@0]
+                                   ],
+                               @[
+                                   @[@675,@796],
+                                   @[@1005,@1440],
+                                   @[@0,@120]
+                                   ],
+                               @[
+                                   @[@675,@796],
+                                   @[@1005,@1440],
+                                   @[@0,@120]
+                                   ],
+                               @[
+                                   @[@675,@796],
+                                   @[@1005,@1440],
+                                   @[@0,@120]
+                                   ],
+                               @[
+                                   @[@675,@796],
+                                   @[@1005,@1440],
+                                   @[@0,@120]
+                                   ],
+                               @[
+                                   @[@675,@796],
+                                   @[@1005,@1440],
+                                   @[@0,@120]
+                                   ],
+                               @[
+                                   @[@0,@0]
+                                   ]
+                               ];
+    
+    self.willardCStore.isOpen = self.willardCStore.getIsOpen;
+    self.willardLabel.text = [NSString stringWithFormat:@"%@ %@", self.willardCStore.name, self.willardCStore.timeLeft];
+
+
+    
+    self.plexCStore.name = @"Plex";
+    self.plexCStore.hours =@[
+                             @[
+                                 @[@660,@1140]
+                                 ],
+                             @[
+                                 @[@450,@1440]
+                                 ],
+                             @[
+                                 @[@450,@1440]
+                                 ],
+                             @[
+                                 @[@450,@1440]
+                                 ],
+                             @[
+                                 @[@450,@1440]
+                                 ],
+                             @[
+                                 @[@450,@1440]
+                                 ],
+                             @[
+                                 @[@450,@1440]
+                                 ],
+                             ];
+    
+    self.plexCStore.isOpen = self.plexCStore.getIsOpen;
+    self.plexLabel.text = [NSString stringWithFormat:@"%@ %@", self.plexCStore.name, self.plexCStore.timeLeft];
+
+    
+    self.hinmanCStore.name = @"Hinman";
+    self.hinmanCStore.hours = @[
+                                @[
+                                    @[@660,@1440]
+                                    ],
+                                @[
+                                    @[@450,@1440]
+                                    ],
+                                @[
+                                    @[@450,@1440]
+                                    ],
+                                @[
+                                    @[@450,@1440]
+                                    ],
+                                @[
+                                    @[@450,@1440]
+                                    ],
+                                @[
+                                    @[@450,@1140]
+                                    ],
+                                @[
+                                    @[@645,@1140]
+                                    ]
+                                ];
+    
+    self.hinmanCStore.isOpen = self.hinmanCStore.getIsOpen;
+    self.hinmanLabel.text = [NSString stringWithFormat:@"%@ %@", self.hinmanCStore.name, self.hinmanCStore.timeLeft];
+
+}
+
+- (void)setBars
+{
+    CGRect frame = self.willardCStore.frame;
+    frame = self.willardCStore.frame;
+    frame.size.width = 280*self.willardCStore.newWidth;
+    self.willardCStore.frame = frame;
+    
+    
+    frame = self.plexCStore.frame;
+    frame.size.width = 280*self.plexCStore.newWidth;
+    self.plexCStore.frame = frame;
+    
+    
+    frame = self.hinmanCStore.frame;
+    frame.size.width = 280*self.hinmanCStore.newWidth;
+    self.hinmanCStore.frame = frame;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +188,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return 4;
 }
 
 /*

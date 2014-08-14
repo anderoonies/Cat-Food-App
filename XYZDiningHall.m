@@ -12,50 +12,85 @@
 
 -(BOOL)getIsOpen
 {
-    BOOL isOpen = '\0';
-    int day = [self getDay];
-    int minutes = [self getMinutes];
-    
-    for (int i=0; i<(int)[[_hours objectAtIndex:day]count]; i++) {
-        NSNumber *open = _hours[day][i][0];
-        NSNumber *close = _hours[day][i][1];
+    XYZTimeUtilities *time = [[XYZTimeUtilities alloc] init];
+    BOOL isOpen = false;
+    for (int i=0; i<(int)[_hours[time.day] count]; i++) {
+        NSNumber* open = _hours[time.day][i][0];
+        NSNumber* close = _hours[time.day][i][1];
         
-        if ((minutes>=open.intValue)&&(minutes<=close.intValue))
+        if ((time.minutes>=open.intValue)&&(time.minutes<=close.intValue))
         {
-            self.newWidth=(float)(close.intValue-minutes)/120;
+            double ratio = (double)(close.intValue-time.minutes)/120;
+            if (ratio>=1)
+            {
+                self.newWidth=1;
+            }
+            else
+            {
+                self.newWidth=ratio;
+            }
             if (self.newWidth<.16)
             {
-                self.backgroundColor = [UIColor colorWithRed:(255/255) green:(226/250) blue:(9/255) alpha:0];
+                self.backgroundColor = [UIColor colorWithRed:(255/255.0) green:(166/250.0) blue:(50/255.0) alpha:1];
             }
+            
+            self.timeLeft = [NSString stringWithFormat:@"%@ %@", @"closes at", [self toTime:close.intValue]];
+            
+            return isOpen=true;
         }
-        else
-            isOpen = false;
-            self.newWidth=0;
     }
-    return isOpen;
+    self.timeLeft = @"is closed for the day";
+    self.newWidth=0;
+    for (int i=0; i<(int)[_hours[time.day] count]; i++)
+    {
+        NSNumber* open = _hours[time.day][i][0];
+        if (time.minutes<open.intValue)
+        {
+            self.timeLeft = [NSString stringWithFormat:@"%@ %@", @"opens at", [self toTime:open.intValue]];
+        }
+    }
+    return isOpen=false;
 }
 
 
-- (int)getMinutes
+-(NSString*)toTime:(int)rawMinutes
 {
-    NSDate *date = [[NSDate alloc] init];
-    NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
-    unsigned unitFlags =  NSHourCalendarUnit | NSMinuteCalendarUnit;
-    NSDateComponents *components = [gregorian components:unitFlags fromDate:date];
+    NSString* hours = [@((((rawMinutes/60)%24)%12)) stringValue];
+    NSString* minutes = [@(rawMinutes%60) stringValue];
+    if ([hours isEqual:@"0"]) {
+        hours=@"12";
+    }
+    if ([minutes isEqual:@"0"]) {
+        minutes=@"00";
+    }
     
-    return 60 * [components hour] + [components minute];
+    NSString* time = [NSString stringWithFormat:@"%@:%@", hours, minutes];
+    
+    return time;
 }
 
-- (int)getDay
-{
-    NSDate *today = [NSDate date];
-    NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *weekdayComponents =
-    [gregorian components:(NSDayCalendarUnit | NSWeekdayCalendarUnit) fromDate:today];
-    return [weekdayComponents weekday];;
-}
+
+
+//- (int)getMinutes
+//{
+//    NSDate *date = [[NSDate alloc] init];
+//    NSCalendar *gregorian = [[NSCalendar alloc]
+//                             initWithCalendarIdentifier:NSGregorianCalendar];
+//    unsigned unitFlags =  NSHourCalendarUnit | NSMinuteCalendarUnit;
+//    NSDateComponents *components = [gregorian components:unitFlags fromDate:date];
+//    
+//    return 60 * [components hour] + [components minute];
+//}
+//
+//- (int)getDay
+//{
+//    NSDate *today = [NSDate date];
+//    NSCalendar *gregorian = [[NSCalendar alloc]
+//                             initWithCalendarIdentifier:NSGregorianCalendar];
+//    NSDateComponents *weekdayComponents =
+//    [gregorian components:(NSDayCalendarUnit | NSWeekdayCalendarUnit) fromDate:today];
+//    return [weekdayComponents weekday]-1;
+//}
 
 @end
 

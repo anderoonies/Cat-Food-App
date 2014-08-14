@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		863D887819883CC900AE66A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887719883CC900AE66A7 /* Foundation.framework */; };
-		863D887A19883CC900AE66A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887919883CC900AE66A7 /* CoreGraphics.framework */; };
 		863D887C19883CC900AE66A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887B19883CC900AE66A7 /* UIKit.framework */; };
 		863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 863D888019883CC900AE66A7 /* InfoPlist.strings */; };
 		863D888419883CC900AE66A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D888319883CC900AE66A7 /* main.m */; };
@@ -23,6 +22,9 @@
 		863D88A919883CC900AE66A7 /* Cat_Food_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D88A819883CC900AE66A7 /* Cat_Food_AppTests.m */; };
 		863D88B419883CF000AE66A7 /* XYZDiningHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */; };
 		863D88BA1988428B00AE66A7 /* XYZDiningHall.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D88B91988428B00AE66A7 /* XYZDiningHall.m */; };
+		86856F3C198C827D00DEF277 /* XYZNorrisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */; };
+		86C74460198D80CB000C69DA /* XYZCafesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */; };
+		86DDEFE6198C4A5600445725 /* XYZTimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */; };
 		86F8E65D1988EF7A0082C16D /* XYZCStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +61,22 @@
 		863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZDiningHallTableViewController.m; sourceTree = "<group>"; };
 		863D88B81988428B00AE66A7 /* XYZDiningHall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZDiningHall.h; path = ../XYZDiningHall.h; sourceTree = "<group>"; };
 		863D88B91988428B00AE66A7 /* XYZDiningHall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZDiningHall.m; path = ../XYZDiningHall.m; sourceTree = "<group>"; };
-		86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZCStoreTableViewController.h; sourceTree = "<group>"; };
-		86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZCStoreTableViewController.m; sourceTree = "<group>"; };
+		86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZNorrisTableViewController.h; sourceTree = "<group>"; };
+		86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZNorrisTableViewController.m; sourceTree = "<group>"; };
+		86C64C41198F0FBB002DC4A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		86C64C43198F0FC2002DC4A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		86C64C45198F0FCE002DC4A7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		86C64C47198F0FD9002DC4A7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		86C64C49198F0FDE002DC4A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		86C64C4B198F0FE5002DC4A7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		86C64C4D198F0FED002DC4A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		86C64C4F198F0FF6002DC4A7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZCafesTableViewController.h; sourceTree = "<group>"; };
+		86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZCafesTableViewController.m; sourceTree = "<group>"; };
+		86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTimeUtilities.h; sourceTree = "<group>"; };
+		86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTimeUtilities.m; sourceTree = "<group>"; };
+		86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZCStoreTableViewController.h; path = ../XYZCStoreTableViewController.h; sourceTree = "<group>"; };
+		86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZCStoreTableViewController.m; path = ../XYZCStoreTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863D887A19883CC900AE66A7 /* CoreGraphics.framework in Frameworks */,
 				863D887C19883CC900AE66A7 /* UIKit.framework in Frameworks */,
 				863D887819883CC900AE66A7 /* Foundation.framework in Frameworks */,
 			);
@@ -90,8 +105,8 @@
 		863D886B19883CC900AE66A7 = {
 			isa = PBXGroup;
 			children = (
-				86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */,
-				86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */,
+				86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */,
+				86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */,
 				863D887D19883CC900AE66A7 /* Cat Food App */,
 				863D88A219883CC900AE66A7 /* Cat Food AppTests */,
 				863D887619883CC900AE66A7 /* Frameworks */,
@@ -111,6 +126,14 @@
 		863D887619883CC900AE66A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86C64C4F198F0FF6002DC4A7 /* SystemConfiguration.framework */,
+				86C64C4D198F0FED002DC4A7 /* StoreKit.framework */,
+				86C64C4B198F0FE5002DC4A7 /* Security.framework */,
+				86C64C49198F0FDE002DC4A7 /* QuartzCore.framework */,
+				86C64C47198F0FD9002DC4A7 /* libz.dylib */,
+				86C64C45198F0FCE002DC4A7 /* CoreLocation.framework */,
+				86C64C43198F0FC2002DC4A7 /* CFNetwork.framework */,
+				86C64C41198F0FBB002DC4A7 /* AudioToolbox.framework */,
 				863D887719883CC900AE66A7 /* Foundation.framework */,
 				863D887919883CC900AE66A7 /* CoreGraphics.framework */,
 				863D887B19883CC900AE66A7 /* UIKit.framework */,
@@ -122,11 +145,17 @@
 		863D887D19883CC900AE66A7 /* Cat Food App */ = {
 			isa = PBXGroup;
 			children = (
+				86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */,
+				86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */,
 				863D88B81988428B00AE66A7 /* XYZDiningHall.h */,
 				863D88B91988428B00AE66A7 /* XYZDiningHall.m */,
+				86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */,
+				86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */,
 				863D888619883CC900AE66A7 /* XYZAppDelegate.h */,
 				863D888719883CC900AE66A7 /* XYZAppDelegate.m */,
 				863D888919883CC900AE66A7 /* Main_iPhone.storyboard */,
+				86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */,
+				86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */,
 				863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */,
 				863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */,
 				863D888C19883CC900AE66A7 /* Main_iPad.storyboard */,
@@ -264,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DDEFE6198C4A5600445725 /* XYZTimeUtilities.m in Sources */,
 				863D88BA1988428B00AE66A7 /* XYZDiningHall.m in Sources */,
+				86856F3C198C827D00DEF277 /* XYZNorrisTableViewController.m in Sources */,
 				863D88B419883CF000AE66A7 /* XYZDiningHallTableViewController.m in Sources */,
+				86C74460198D80CB000C69DA /* XYZCafesTableViewController.m in Sources */,
 				863D888819883CC900AE66A7 /* XYZAppDelegate.m in Sources */,
 				86F8E65D1988EF7A0082C16D /* XYZCStoreTableViewController.m in Sources */,
 				863D888419883CC900AE66A7 /* main.m in Sources */,
@@ -403,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Food App/Cat Food App-Prefix.pch";
 				INFOPLIST_FILE = "Cat Food App/Cat Food App-Info.plist";
@@ -416,6 +452,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Food App/Cat Food App-Prefix.pch";
 				INFOPLIST_FILE = "Cat Food App/Cat Food App-Info.plist";

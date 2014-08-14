@@ -7,18 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYZTimeUtilities.h"
 
 @interface XYZDiningHall : UIImageView
 
 @property NSString *name;
 @property NSArray* hours;
 @property double newWidth;
-@property double closingWidth;
+@property NSString* timeLeft;
 @property BOOL isOpen;
 
 -(BOOL)getIsOpen;
--(int)getMinutes;
--(int)getDay;
+-(NSString*)toTime:(int)minutes;
+//-(int)getMinutes;
+//-(int)getDay;
 
 
 @end
