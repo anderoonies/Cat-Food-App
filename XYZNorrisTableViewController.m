@@ -75,7 +75,7 @@
     self.willies.isOpen=self.willies.getIsOpen;
     self.williesLabel.text = [NSString stringWithFormat:@"%@ %@", self.willies.name, self.willies.timeLeft];
     
-    self.paws.name=@"Paws 'n Go";
+    self.paws.name=@"Paws";
     self.paws.hours=@[
                       @[
                           @[@660,@1380]
