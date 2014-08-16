@@ -39,17 +39,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [self setBars];
-    
-    NSLog(@"Allison Hall %f", self.allisonHall.frame.size.width);
-    NSLog(@"hinman hall %f", self.hinmanHall.frame.size.width);
-
-    NSLog(@"plex east %f", self.plexEastHall.frame.size.width);
-    NSLog(@"plex west%f", self.plexWestHall.frame.size.width);
-    NSLog(@"elder hall %f", self.elderHall.frame.size.width);
-    NSLog(@"sargent %f", self.sargentHall.frame.size.width);
-    NSLog(@"willard %f", self.willardHall.frame.size.width);
-    NSLog(@"%hhd",self.elderHall.isOpen);
-
 }
 
 - (void)loadInitialData

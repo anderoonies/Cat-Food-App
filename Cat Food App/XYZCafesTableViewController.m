@@ -28,7 +28,6 @@
     [super viewDidLoad];
     [self loadInitialData];
     [self viewDidAppear:NO];
-    NSLog(@"THE ANSWER IS %f", self.techx.frame.size.width);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

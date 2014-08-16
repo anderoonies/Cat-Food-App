@@ -37,11 +37,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    
-    NSLog(@"ayyy lmao ;)");
     [self setBars];
-    NSLog(@"%f", self.dunkin.frame.size.width);
-    
 }
 
 - (void)loadInitialData
