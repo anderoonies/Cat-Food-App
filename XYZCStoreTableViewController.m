@@ -36,6 +36,7 @@
         self.eqLabel.text = @"Equivalencies: $9.00";
     } else
     self.eqLabel.text = @"Equivalencies: $7.00";
+    self.tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

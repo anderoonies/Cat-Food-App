@@ -28,6 +28,7 @@
     [super viewDidLoad];
     [self loadInitialData];
     [self viewDidAppear:NO];
+    self.tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
