@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "863D887319883CC900AE66A7"
                BuildableName = "Cat Food App.app"
-               BlueprintName = "Cat Food App"
-               ReferencedContainer = "container:Cat Food App.xcodeproj">
+               BlueprintName = "Cat Food"
+               ReferencedContainer = "container:Cat Food.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "863D889A19883CC900AE66A7"
                BuildableName = "Cat Food AppTests.xctest"
-               BlueprintName = "Cat Food AppTests"
-               ReferencedContainer = "container:Cat Food App.xcodeproj">
+               BlueprintName = "Cat FoodTests"
+               ReferencedContainer = "container:Cat Food.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "863D887319883CC900AE66A7"
             BuildableName = "Cat Food App.app"
-            BlueprintName = "Cat Food App"
-            ReferencedContainer = "container:Cat Food App.xcodeproj">
+            BlueprintName = "Cat Food"
+            ReferencedContainer = "container:Cat Food.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "863D887319883CC900AE66A7"
             BuildableName = "Cat Food App.app"
-            BlueprintName = "Cat Food App"
-            ReferencedContainer = "container:Cat Food App.xcodeproj">
+            BlueprintName = "Cat Food"
+            ReferencedContainer = "container:Cat Food.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "863D887319883CC900AE66A7"
             BuildableName = "Cat Food App.app"
-            BlueprintName = "Cat Food App"
-            ReferencedContainer = "container:Cat Food App.xcodeproj">
+            BlueprintName = "Cat Food"
+            ReferencedContainer = "container:Cat Food.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

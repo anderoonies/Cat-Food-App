@@ -39,22 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		863D887419883CC900AE66A7 /* Cat Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		863D887419883CC900AE66A7 /* Cat Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863D887719883CC900AE66A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		863D887919883CC900AE66A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		863D887B19883CC900AE66A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		863D887F19883CC900AE66A7 /* Cat Food App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cat Food App-Info.plist"; sourceTree = "<group>"; };
 		863D888119883CC900AE66A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		863D888319883CC900AE66A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		863D888519883CC900AE66A7 /* Cat Food App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat Food App-Prefix.pch"; sourceTree = "<group>"; };
+		863D888519883CC900AE66A7 /* Cat Food-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat Food-Prefix.pch"; sourceTree = "<group>"; };
 		863D888619883CC900AE66A7 /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
 		863D888719883CC900AE66A7 /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
 		863D888A19883CC900AE66A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		863D888D19883CC900AE66A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		863D889519883CC900AE66A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		863D889B19883CC900AE66A7 /* Cat Food AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat Food AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		863D889B19883CC900AE66A7 /* Cat FoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat FoodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863D889C19883CC900AE66A7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		863D88A419883CC900AE66A7 /* Cat Food AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cat Food AppTests-Info.plist"; sourceTree = "<group>"; };
+		863D88A419883CC900AE66A7 /* Cat FoodTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cat FoodTests-Info.plist"; sourceTree = "<group>"; };
 		863D88A619883CC900AE66A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		863D88A819883CC900AE66A7 /* Cat_Food_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat_Food_AppTests.m; sourceTree = "<group>"; };
 		863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZDiningHallTableViewController.h; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		863D887519883CC900AE66A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				863D887419883CC900AE66A7 /* Cat Food App.app */,
-				863D889B19883CC900AE66A7 /* Cat Food AppTests.xctest */,
+				863D887419883CC900AE66A7 /* Cat Food.app */,
+				863D889B19883CC900AE66A7 /* Cat FoodTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				863D887F19883CC900AE66A7 /* Cat Food App-Info.plist */,
 				863D888019883CC900AE66A7 /* InfoPlist.strings */,
 				863D888319883CC900AE66A7 /* main.m */,
-				863D888519883CC900AE66A7 /* Cat Food App-Prefix.pch */,
+				863D888519883CC900AE66A7 /* Cat Food-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 		863D88A319883CC900AE66A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				863D88A419883CC900AE66A7 /* Cat Food AppTests-Info.plist */,
+				863D88A419883CC900AE66A7 /* Cat FoodTests-Info.plist */,
 				863D88A519883CC900AE66A7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -197,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		863D887319883CC900AE66A7 /* Cat Food App */ = {
+		863D887319883CC900AE66A7 /* Cat Food */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 863D88AC19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat Food App" */;
+			buildConfigurationList = 863D88AC19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat Food" */;
 			buildPhases = (
 				863D887019883CC900AE66A7 /* Sources */,
 				863D887119883CC900AE66A7 /* Frameworks */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = "Cat Food App";
+			name = "Cat Food";
 			productName = "Cat Food App";
-			productReference = 863D887419883CC900AE66A7 /* Cat Food App.app */;
+			productReference = 863D887419883CC900AE66A7 /* Cat Food.app */;
 			productType = "com.apple.product-type.application";
 		};
-		863D889A19883CC900AE66A7 /* Cat Food AppTests */ = {
+		863D889A19883CC900AE66A7 /* Cat FoodTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 863D88AF19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat Food AppTests" */;
+			buildConfigurationList = 863D88AF19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat FoodTests" */;
 			buildPhases = (
 				863D889719883CC900AE66A7 /* Sources */,
 				863D889819883CC900AE66A7 /* Frameworks */,
@@ -227,9 +227,9 @@
 			dependencies = (
 				863D88A119883CC900AE66A7 /* PBXTargetDependency */,
 			);
-			name = "Cat Food AppTests";
+			name = "Cat FoodTests";
 			productName = "Cat Food AppTests";
-			productReference = 863D889B19883CC900AE66A7 /* Cat Food AppTests.xctest */;
+			productReference = 863D889B19883CC900AE66A7 /* Cat FoodTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 863D886F19883CC900AE66A7 /* Build configuration list for PBXProject "Cat Food App" */;
+			buildConfigurationList = 863D886F19883CC900AE66A7 /* Build configuration list for PBXProject "Cat Food" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -260,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				863D887319883CC900AE66A7 /* Cat Food App */,
-				863D889A19883CC900AE66A7 /* Cat Food AppTests */,
+				863D887319883CC900AE66A7 /* Cat Food */,
+				863D889A19883CC900AE66A7 /* Cat FoodTests */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		863D88A119883CC900AE66A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 863D887319883CC900AE66A7 /* Cat Food App */;
+			target = 863D887319883CC900AE66A7 /* Cat Food */;
 			targetProxy = 863D88A019883CC900AE66A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,9 +440,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cat Food App/Cat Food App-Prefix.pch";
+				GCC_PREFIX_HEADER = "Cat Food App/Cat Food-Prefix.pch";
 				INFOPLIST_FILE = "Cat Food App/Cat Food App-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cat Food";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -457,9 +457,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cat Food App/Cat Food App-Prefix.pch";
+				GCC_PREFIX_HEADER = "Cat Food App/Cat Food-Prefix.pch";
 				INFOPLIST_FILE = "Cat Food App/Cat Food App-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cat Food";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -479,8 +479,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Cat Food AppTests/Cat Food AppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Cat Food AppTests/Cat FoodTests-Info.plist";
+				PRODUCT_NAME = "Cat FoodTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -497,8 +497,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Food App/Cat Food App-Prefix.pch";
-				INFOPLIST_FILE = "Cat Food AppTests/Cat Food AppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Cat Food AppTests/Cat FoodTests-Info.plist";
+				PRODUCT_NAME = "Cat FoodTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -507,7 +507,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		863D886F19883CC900AE66A7 /* Build configuration list for PBXProject "Cat Food App" */ = {
+		863D886F19883CC900AE66A7 /* Build configuration list for PBXProject "Cat Food" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				863D88AA19883CC900AE66A7 /* Debug */,
@@ -516,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		863D88AC19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat Food App" */ = {
+		863D88AC19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat Food" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				863D88AD19883CC900AE66A7 /* Debug */,
@@ -525,7 +525,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		863D88AF19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat Food AppTests" */ = {
+		863D88AF19883CC900AE66A7 /* Build configuration list for PBXNativeTarget "Cat FoodTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				863D88B019883CC900AE66A7 /* Debug */,

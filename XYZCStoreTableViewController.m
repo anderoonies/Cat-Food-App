@@ -36,8 +36,7 @@
         self.eqLabel.text = @"Equivalencies: $9.00";
     } else
     self.eqLabel.text = @"Equivalencies: $7.00";
-    self.tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top);
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -45,9 +44,16 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [self setBars];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -self.tableView.contentInset.top) animated:YES];
+    
 }
 
 - (void)loadInitialData
