@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "863D887319883CC900AE66A7"
-               BuildableName = "Cat Food App.app"
+               BuildableName = "Cat Food.app"
                BlueprintName = "Cat Food"
                ReferencedContainer = "container:Cat Food.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "863D889A19883CC900AE66A7"
-               BuildableName = "Cat Food AppTests.xctest"
+               BuildableName = "Cat FoodTests.xctest"
                BlueprintName = "Cat FoodTests"
                ReferencedContainer = "container:Cat Food.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "863D887319883CC900AE66A7"
-            BuildableName = "Cat Food App.app"
+            BuildableName = "Cat Food.app"
             BlueprintName = "Cat Food"
             ReferencedContainer = "container:Cat Food.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "863D887319883CC900AE66A7"
-            BuildableName = "Cat Food App.app"
+            BuildableName = "Cat Food.app"
             BlueprintName = "Cat Food"
             ReferencedContainer = "container:Cat Food.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "863D887319883CC900AE66A7"
-            BuildableName = "Cat Food App.app"
+            BuildableName = "Cat Food.app"
             BlueprintName = "Cat Food"
             ReferencedContainer = "container:Cat Food.xcodeproj">
          </BuildableReference>
@@ -91,6 +91,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Cat Food"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

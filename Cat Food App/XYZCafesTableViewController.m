@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     [self loadInitialData];
-    [self viewDidAppear:NO];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -38,12 +37,9 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -self.tableView.contentInset.top) animated:YES];
-    
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
     [self setBars];
+
+    
 }
 
 - (void)setBars
@@ -255,7 +251,6 @@
                        ];
     
     self.techx.isOpen=self.techx.getIsOpen;
-    NSLog(@"TechX Newwidth: %f", self.techx.newWidth);
     self.techxLabel.text = [NSString stringWithFormat:@"%@ %@", self.techx.name, self.techx.timeLeft];
     
     

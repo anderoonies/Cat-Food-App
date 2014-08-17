@@ -29,7 +29,6 @@
     [self loadInitialData];
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, CGRectGetHeight(self.tabBarController.tabBar.frame), 0.0f);
-    [super viewDidAppear:NO];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -39,13 +38,9 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -self.tableView.contentInset.top) animated:YES];
-
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
     [self setBars];
 }
+
 
 - (void)loadInitialData
 {

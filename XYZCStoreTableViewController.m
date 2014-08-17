@@ -28,7 +28,6 @@
 {
     [super viewDidLoad];
     [self loadInitialData];
-    [super viewDidAppear:NO];
     XYZTimeUtilities *timer = [[XYZTimeUtilities alloc] init];
     if (450 <= timer.minutes && timer.minutes <= 645) {
         self.eqLabel.text = @"Equivalencies: $5.00";
@@ -44,15 +43,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [self setBars];
-}
-
 -(void)viewWillAppear:(BOOL)animated
 {
     [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -self.tableView.contentInset.top) animated:YES];
+    [self setBars];
     
 }
 
