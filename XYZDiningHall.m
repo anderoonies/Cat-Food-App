@@ -46,10 +46,10 @@
         NSNumber* open = _hours[time.day][i][0];
         if (time.minutes<open.intValue)
         {
-            self.timeLeft = [NSString stringWithFormat:@"%@ %@", @"opens at", [self toTime:open.intValue]];
+            return self.timeLeft = [NSString stringWithFormat:@"%@ %@", @"opens at", [self toTime:open.intValue]];
         }
     }
-    return isOpen=false;
+    return isOpen;
 }
 
 
