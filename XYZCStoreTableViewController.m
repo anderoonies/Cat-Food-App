@@ -58,27 +58,27 @@
                                    @[@0,@0]
                                    ],
                                @[
-                                   @[@675,@796],
+                                   @[@675,@795],
                                    @[@1005,@1440],
                                    @[@0,@120]
                                    ],
                                @[
-                                   @[@675,@796],
+                                   @[@675,@795],
                                    @[@1005,@1440],
                                    @[@0,@120]
                                    ],
                                @[
-                                   @[@675,@796],
+                                   @[@675,@795],
                                    @[@1005,@1440],
                                    @[@0,@120]
                                    ],
                                @[
-                                   @[@675,@796],
+                                   @[@675,@795],
                                    @[@1005,@1440],
                                    @[@0,@120]
                                    ],
                                @[
-                                   @[@675,@796],
+                                   @[@675,@795],
                                    @[@1005,@1440],
                                    @[@0,@120]
                                    ],
@@ -95,7 +95,7 @@
     self.plexCStore.name = @"Plex";
     self.plexCStore.hours =@[
                              @[
-                                 @[@660,@1140]
+                                 @[@660,@1440]
                                  ],
                              @[
                                  @[@450,@1440]
@@ -110,10 +110,10 @@
                                  @[@450,@1440]
                                  ],
                              @[
-                                 @[@450,@1440]
+                                 @[@450,@1140]
                                  ],
                              @[
-                                 @[@450,@1440]
+                                 @[@450,@1140]
                                  ],
                              ];
     
@@ -180,14 +180,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 4;
 }
