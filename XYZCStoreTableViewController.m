@@ -153,19 +153,26 @@
 
 - (void)setBars
 {
+    int fullWidth=280;
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        fullWidth=728;
+    }
+    
     CGRect frame = self.willardCStore.frame;
     frame = self.willardCStore.frame;
-    frame.size.width = 280*self.willardCStore.newWidth;
+    frame.size.width = fullWidth*self.willardCStore.newWidth;
     self.willardCStore.frame = frame;
     
     
     frame = self.plexCStore.frame;
-    frame.size.width = 280*self.plexCStore.newWidth;
+    frame.size.width = fullWidth*self.plexCStore.newWidth;
     self.plexCStore.frame = frame;
     
     
     frame = self.hinmanCStore.frame;
-    frame.size.width = 280*self.hinmanCStore.newWidth;
+    frame.size.width = fullWidth*self.hinmanCStore.newWidth;
     self.hinmanCStore.frame = frame;
 
 }

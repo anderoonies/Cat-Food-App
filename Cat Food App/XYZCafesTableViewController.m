@@ -44,28 +44,36 @@
 
 - (void)setBars
 {
+    
+    int fullWidth=280;
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        fullWidth=728;
+    }
+    
     CGRect frame = self.crowe.frame;
-    frame.size.width = 280*self.crowe.newWidth;
+    frame.size.width = fullWidth*self.crowe.newWidth;
     self.crowe.frame=frame;
     
     frame = self.einstein.frame;
-    frame.size.width=280*self.einstein.newWidth;
+    frame.size.width=fullWidth*self.einstein.newWidth;
     self.einstein.frame=frame;
     
     frame = self.frans.frame;
-    frame.size.width=280*self.frans.newWidth;
+    frame.size.width=fullWidth*self.frans.newWidth;
     self.frans.frame=frame;
     
     frame = self.lisas.frame;
-    frame.size.width=280*self.lisas.newWidth;
+    frame.size.width=fullWidth*self.lisas.newWidth;
     self.lisas.frame=frame;
     
     frame = self.plaza.frame;
-    frame.size.width=280*self.plaza.newWidth;
+    frame.size.width=fullWidth*self.plaza.newWidth;
     self.plaza.frame=frame;
     
     frame = self.techx.frame;
-    frame.size.width=280*self.techx.newWidth;
+    frame.size.width=fullWidth*self.techx.newWidth;
     self.techx.frame=frame;
     
     

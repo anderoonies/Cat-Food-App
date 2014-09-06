@@ -13,7 +13,6 @@
 		863D888419883CC900AE66A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D888319883CC900AE66A7 /* main.m */; };
 		863D888819883CC900AE66A7 /* XYZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D888719883CC900AE66A7 /* XYZAppDelegate.m */; };
 		863D888B19883CC900AE66A7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863D888919883CC900AE66A7 /* Main_iPhone.storyboard */; };
-		863D888E19883CC900AE66A7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863D888C19883CC900AE66A7 /* Main_iPad.storyboard */; };
 		863D889619883CC900AE66A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863D889519883CC900AE66A7 /* Images.xcassets */; };
 		863D889D19883CC900AE66A7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D889C19883CC900AE66A7 /* XCTest.framework */; };
 		863D889E19883CC900AE66A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887719883CC900AE66A7 /* Foundation.framework */; };
@@ -23,6 +22,9 @@
 		863D88B419883CF000AE66A7 /* XYZDiningHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */; };
 		863D88BA1988428B00AE66A7 /* XYZDiningHall.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D88B91988428B00AE66A7 /* XYZDiningHall.m */; };
 		86856F3C198C827D00DEF277 /* XYZNorrisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */; };
+		86B66AE219BB6FEC00977EFC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B66AE119BB6FEC00977EFC /* Main_iPad.storyboard */; };
+		86B66AEA19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B66AE819BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png */; };
+		86B66AEB19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B66AE919BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png */; };
 		86C74460198D80CB000C69DA /* XYZCafesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */; };
 		86DDEFE6198C4A5600445725 /* XYZTimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */; };
 		86F8E65D1988EF7A0082C16D /* XYZCStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */; };
@@ -49,7 +51,6 @@
 		863D888619883CC900AE66A7 /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
 		863D888719883CC900AE66A7 /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
 		863D888A19883CC900AE66A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		863D888D19883CC900AE66A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		863D889519883CC900AE66A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		863D889B19883CC900AE66A7 /* Cat FoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat FoodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863D889C19883CC900AE66A7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,6 +63,9 @@
 		863D88B91988428B00AE66A7 /* XYZDiningHall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZDiningHall.m; path = ../XYZDiningHall.m; sourceTree = "<group>"; };
 		86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZNorrisTableViewController.h; sourceTree = "<group>"; };
 		86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZNorrisTableViewController.m; sourceTree = "<group>"; };
+		86B66AE119BB6FEC00977EFC /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		86B66AE819BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png"; sourceTree = "<group>"; };
+		86B66AE919BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png"; sourceTree = "<group>"; };
 		86C64C41198F0FBB002DC4A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		86C64C43198F0FC2002DC4A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		86C64C45198F0FCE002DC4A7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -72,7 +76,7 @@
 		86C64C4F198F0FF6002DC4A7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZCafesTableViewController.h; sourceTree = "<group>"; };
 		86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZCafesTableViewController.m; sourceTree = "<group>"; };
-		86D3159719A131F900FB993A /* Cat Food App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Cat Food App-Info.plist"; sourceTree = "<group>"; };
+		86D3159719A131F900FB993A /* Cat Food-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Cat Food-Info.plist"; sourceTree = "<group>"; };
 		86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTimeUtilities.h; sourceTree = "<group>"; };
 		86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTimeUtilities.m; sourceTree = "<group>"; };
 		86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZCStoreTableViewController.h; path = ../XYZCStoreTableViewController.h; sourceTree = "<group>"; };
@@ -105,6 +109,9 @@
 		863D886B19883CC900AE66A7 = {
 			isa = PBXGroup;
 			children = (
+				86B66AE819BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png */,
+				86B66AE919BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png */,
+				86B66AE119BB6FEC00977EFC /* Main_iPad.storyboard */,
 				86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */,
 				86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */,
 				863D887D19883CC900AE66A7 /* Cat Food App */,
@@ -158,7 +165,6 @@
 				86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */,
 				863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */,
 				863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */,
-				863D888C19883CC900AE66A7 /* Main_iPad.storyboard */,
 				863D889519883CC900AE66A7 /* Images.xcassets */,
 				863D887E19883CC900AE66A7 /* Supporting Files */,
 			);
@@ -168,7 +174,7 @@
 		863D887E19883CC900AE66A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				86D3159719A131F900FB993A /* Cat Food App-Info.plist */,
+				86D3159719A131F900FB993A /* Cat Food-Info.plist */,
 				863D888019883CC900AE66A7 /* InfoPlist.strings */,
 				863D888319883CC900AE66A7 /* main.m */,
 				863D888519883CC900AE66A7 /* Cat Food-Prefix.pch */,
@@ -242,6 +248,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Andy Bayer";
 				TargetAttributes = {
+					863D887319883CC900AE66A7 = {
+						DevelopmentTeam = 23U6U945X5;
+					};
 					863D889A19883CC900AE66A7 = {
 						TestTargetID = 863D887319883CC900AE66A7;
 					};
@@ -271,9 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863D888E19883CC900AE66A7 /* Main_iPad.storyboard in Resources */,
 				863D889619883CC900AE66A7 /* Images.xcassets in Resources */,
+				86B66AE219BB6FEC00977EFC /* Main_iPad.storyboard in Resources */,
+				86B66AEA19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png in Resources */,
 				863D888B19883CC900AE66A7 /* Main_iPhone.storyboard in Resources */,
+				86B66AEB19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png in Resources */,
 				863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,14 +350,6 @@
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		863D888C19883CC900AE66A7 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				863D888D19883CC900AE66A7 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		863D88A519883CC900AE66A7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,8 +377,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andy Bayer (23U6U945X5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andy Bayer (23U6U945X5)";
+				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -413,7 +417,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andy Bayer (23U6U945X5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andy Bayer (23U6U945X5)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -435,14 +440,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andy Bayer (23U6U945X5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andy Bayer (23U6U945X5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Food App/Cat Food-Prefix.pch";
-				INFOPLIST_FILE = "Cat Food App/Cat Food App-Info.plist";
+				INFOPLIST_FILE = "Cat Food App/Cat Food-Info.plist";
 				PRODUCT_NAME = "Cat Food";
+				PROVISIONING_PROFILE = "08683282-f197-4336-b4c1-6d0c85300301";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -452,14 +461,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andy Bayer (23U6U945X5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andy Bayer (23U6U945X5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Food App/Cat Food-Prefix.pch";
-				INFOPLIST_FILE = "Cat Food App/Cat Food App-Info.plist";
+				INFOPLIST_FILE = "Cat Food App/Cat Food-Info.plist";
 				PRODUCT_NAME = "Cat Food";
+				PROVISIONING_PROFILE = "08683282-f197-4336-b4c1-6d0c85300301";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

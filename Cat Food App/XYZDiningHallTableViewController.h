@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet XYZDiningHall *allisonHall;
 @property (weak, nonatomic) IBOutlet UILabel *allisonLabel;
 
+
 @property (weak, nonatomic) IBOutlet XYZDiningHall *willardHall;
 @property (weak, nonatomic) IBOutlet UILabel *willardLabel;
 
@@ -23,8 +24,10 @@
 @property (weak, nonatomic) IBOutlet XYZDiningHall *plexWestHall;
 @property (weak, nonatomic) IBOutlet UILabel *plexWestLabel;
 
+
 @property (weak, nonatomic) IBOutlet XYZDiningHall *elderHall;
 @property (weak, nonatomic) IBOutlet UILabel *elderLabel;
+
 
 @property (weak, nonatomic) IBOutlet XYZDiningHall *hinmanHall;
 @property (weak, nonatomic) IBOutlet UILabel *hinmanLabel;

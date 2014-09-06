@@ -5,14 +5,14 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "applaunchiPhone5_c-1.png",
+      "filename" : "iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM-1.png",
       "scale" : "2x"
     },
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "retina4",
-      "filename" : "applaunchiPhone5_c.png",
+      "filename" : "iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM-2.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
       "scale" : "2x"
@@ -22,7 +22,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "applaunchiPadLoRes.png",
+      "filename" : "iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png",
       "scale" : "1x"
     },
     {
@@ -37,7 +37,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "applaunchiPad.png",
+      "filename" : "iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM-1.png",
       "scale" : "2x"
     },
     {

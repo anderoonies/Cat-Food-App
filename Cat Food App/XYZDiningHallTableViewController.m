@@ -35,13 +35,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [self setBars];
-}
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    [self setBars];
     [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -self.tableView.contentInset.top) animated:YES];
 }
 
@@ -309,35 +306,43 @@
 
 - (void)setBars
 {
+    
+    int fullWidth=280;
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        fullWidth=728;
+    }
+    
     CGRect frame = self.allisonHall.frame;
-    frame = self.allisonHall.frame;
-    frame.size.width = 280*self.allisonHall.newWidth;
+    frame.size.width = fullWidth*self.allisonHall.newWidth;
     self.allisonHall.frame = frame;
     
     
+    
     frame = self.willardHall.frame;
-    frame.size.width = 280*self.willardHall.newWidth;
+    frame.size.width = fullWidth*self.willardHall.newWidth;
     self.willardHall.frame = frame;
     
     
     frame = self.plexEastHall.frame;
-    frame.size.width = 280*self.plexEastHall.newWidth;
+    frame.size.width = fullWidth*self.plexEastHall.newWidth;
     self.plexEastHall.frame = frame;
     
     frame = self.plexWestHall.frame;
-    frame.size.width = 280*self.plexWestHall.newWidth;
+    frame.size.width = fullWidth*self.plexWestHall.newWidth;
     self.plexWestHall.frame = frame;
     
     frame = self.hinmanHall.frame;
-    frame.size.width = 280*self.hinmanHall.newWidth;
+    frame.size.width = fullWidth*self.hinmanHall.newWidth;
     self.hinmanHall.frame = frame;
     
     frame = self.elderHall.frame;
-    frame.size.width = 280*self.elderHall.newWidth;
+    frame.size.width = fullWidth*self.elderHall.newWidth;
     self.elderHall.frame = frame;
     
     frame = self.sargentHall.frame;
-    frame.size.width = 280*self.sargentHall.newWidth;
+    frame.size.width = fullWidth*self.sargentHall.newWidth;
     self.sargentHall.frame = frame;
     
 }
