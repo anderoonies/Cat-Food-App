@@ -10,9 +10,8 @@
 
 @interface XYZHourLoader : NSObject
 
-@property NSData *data;
+@property NSDictionary *data;
 
-//- (void) loadMinutes;
 
 
 @end

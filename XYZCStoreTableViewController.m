@@ -8,6 +8,7 @@
 
 #import "XYZCStoreTableViewController.h"
 #import "XYZTimeUtilities.h"
+#import "XYZHourLoader.h"
 
 @interface XYZCStoreTableViewController ()
 
@@ -52,6 +53,8 @@
 
 - (void)loadInitialData
 {
+    XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    NSDictionary *hoursArray = hoursLoader.data;
     self.willardCStore.name = @"Willard";
     self.willardCStore.hours = @[
                                @[
@@ -87,6 +90,7 @@
                                    ]
                                ];
     
+    self.willardCStore.hours=hoursArray[self.willardCStore.name];    
     self.willardCStore.isOpen = self.willardCStore.getIsOpen;
     self.willardLabel.text = [NSString stringWithFormat:@"%@ %@", self.willardCStore.name, self.willardCStore.timeLeft];
 

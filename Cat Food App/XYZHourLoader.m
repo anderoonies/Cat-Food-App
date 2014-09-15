@@ -19,15 +19,13 @@
         NSData *response = [NSURLConnection sendSynchronousRequest:request
                                                  returningResponse:nil error:nil];
         NSError *e;
-        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &e];
+        NSDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &e];
         
         if (!jsonArray) {
             NSLog(@"Error parsing JSON: %@", e);
-        } else {
-            for(NSDictionary *item in jsonArray) {
-                NSLog(@"Item: %@", item);
-            }
         }
+        _data=jsonArray;
+        
     }
     
     return self;

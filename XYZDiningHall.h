@@ -12,11 +12,13 @@
 @interface XYZDiningHall : UIImageView
 
 @property NSString *name;
-@property NSArray* hours;
+@property NSArray* todayHours;
+@property NSDictionary* hours;
 @property double newWidth;
 @property NSString* timeLeft;
 @property BOOL isOpen;
 
+-(NSArray*)parseTimes;
 -(BOOL)getIsOpen;
 -(NSString*)toTime:(int)minutes;
 //-(int)getMinutes;

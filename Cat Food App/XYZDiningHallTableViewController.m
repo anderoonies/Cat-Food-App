@@ -29,7 +29,6 @@
     [self loadInitialData];
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, CGRectGetHeight(self.tabBarController.tabBar.frame), 0.0f);
-    XYZHourLoader *hourLoad = [[XYZHourLoader alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -46,259 +45,268 @@
 
 - (void)loadInitialData
 {
+    XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    NSDictionary *data = hoursLoader.data;
+
     self.allisonHall.name = @"Allison";
-    self.allisonHall.hours = @[
-                               @[
-                                   @[@600,@780],
-                                   @[@1005,@1170]
-                                   ],
-                               @[
-                                   @[@450,@585],
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@450,@585],
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@450,@585],
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@450,@585],
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@450,@585],
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@645,@810],
-                                   @[@1005,@1170]
-                                   ],
-                               ];
+//    self.allisonHall.hours = @[
+//                               @[
+//                                   @[@600,@780],
+//                                   @[@1005,@1170]
+//                                   ],
+//                               @[
+//                                   @[@450,@585],
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@450,@585],
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@450,@585],
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@450,@585],
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@450,@585],
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@645,@810],
+//                                   @[@1005,@1170]
+//                                   ],
+//                               ];
+    self.allisonHall.hours=[data objectForKey:@"allisonHall"];
     
     self.allisonHall.isOpen = self.allisonHall.getIsOpen;
     self.allisonLabel.text = [NSString stringWithFormat:@"%@ %@", self.allisonHall.name, self.allisonHall.timeLeft];
     
     
     self.hinmanHall.name = @"Hinman";
-    self.hinmanHall.hours =@[
-                             @[
-                                 @[@0,@0]
-                                 ],
-                             @[
-                                 @[@450,@585],
-                                 @[@645,@1200]
-                                 ],
-                             @[
-                                 @[@450,@585],
-                                 @[@645,@1200]
-                                 ],
-                             @[
-                                 @[@450,@585],
-                                 @[@645,@1200]
-                                 ],
-                             @[
-                                 @[@450,@585],
-                                 @[@645,@1200]
-                                 ],
-                             @[
-                                 @[@450,@585],
-                                 @[@645,@1140]
-                                 ],
-                             @[
-                                 @[@0,@0]
-                                 ],
-                             ];
-    
+//    self.hinmanHall.hours =@[
+//                             @[
+//                                 @[@0,@0]
+//                                 ],
+//                             @[
+//                                 @[@450,@585],
+//                                 @[@645,@1200]
+//                                 ],
+//                             @[
+//                                 @[@450,@585],
+//                                 @[@645,@1200]
+//                                 ],
+//                             @[
+//                                 @[@450,@585],
+//                                 @[@645,@1200]
+//                                 ],
+//                             @[
+//                                 @[@450,@585],
+//                                 @[@645,@1200]
+//                                 ],
+//                             @[
+//                                 @[@450,@585],
+//                                 @[@645,@1140]
+//                                 ],
+//                             @[
+//                                 @[@0,@0]
+//                                 ],
+//                             ];
+    self.hinmanHall.hours=[data objectForKey:@"hinmanHall"];
     self.hinmanHall.isOpen = self.hinmanHall.getIsOpen;
     self.hinmanLabel.text = [NSString stringWithFormat:@"%@ %@", self.hinmanHall.name, self.hinmanHall.timeLeft];
 
 
     
     self.plexEastHall.name = @"Plex East";
-    self.plexEastHall.hours = @[
-                                @[
-                                    @[@660,@840],
-                                    @[@1005,@1140]
-                                    ],
-                                @[
-                                    @[@645,@795],
-                                    @[@1005,@1200]
-                                    ],
-                                @[
-                                    @[@645,@795],
-                                    @[@1005,@1200]
-                                    ],
-                                @[
-                                    @[@645,@795],
-                                    @[@1005,@1200]
-                                    ],
-                                @[
-                                    @[@645,@795],
-                                    @[@1005,@1200]
-                                    ],
-                                @[
-                                    @[@645,@795],
-                                    @[@1005,@1200]
-                                    ],
-                                @[
-                                    @[@645,@810],
-                                    @[@1005,@1140],
-                                    ]
-                                ];
-    
+//    self.plexEastHall.hours = @[
+//                                @[
+//                                    @[@660,@840],
+//                                    @[@1005,@1140]
+//                                    ],
+//                                @[
+//                                    @[@645,@795],
+//                                    @[@1005,@1200]
+//                                    ],
+//                                @[
+//                                    @[@645,@795],
+//                                    @[@1005,@1200]
+//                                    ],
+//                                @[
+//                                    @[@645,@795],
+//                                    @[@1005,@1200]
+//                                    ],
+//                                @[
+//                                    @[@645,@795],
+//                                    @[@1005,@1200]
+//                                    ],
+//                                @[
+//                                    @[@645,@795],
+//                                    @[@1005,@1200]
+//                                    ],
+//                                @[
+//                                    @[@645,@810],
+//                                    @[@1005,@1140],
+//                                    ]
+//                                ];
+//
+    self.plexEastHall.hours=[data objectForKey:@"plexEastHall"];
     self.plexEastHall.isOpen = self.plexEastHall.getIsOpen;
     self.plexEastLabel.text = [NSString stringWithFormat:@"%@ %@", self.plexEastHall.name, self.plexEastHall.timeLeft];
 
     
     self.plexWestHall.name = @"Plex West";
-    self.plexWestHall.hours = @[
-                                @[
-                                    @[@660,@840],
-                                    @[@1005,@1170]
-                                    ],
-                                @[
-                                    @[@450,@645],
-                                    @[@705,@1005],
-                                    @[@1035,@1170],
-                                    @[@1200,@1410]
-                                    ],
-                                @[
-                                    @[@450,@645],
-                                    @[@705,@1005],
-                                    @[@1035,@1170],
-                                    @[@1200,@1410]
-                                    ],
-                                @[
-                                    @[@450,@645],
-                                    @[@705,@1005],
-                                    @[@1035,@1170],
-                                    @[@1200,@1410]
-                                    ],
-                                @[
-                                    @[@450,@645],
-                                    @[@705,@1005],
-                                    @[@1035,@1170],
-                                    @[@1200,@1410]
-                                    ],
-                                @[
-                                    @[@450,@645],
-                                    @[@705,@1005],
-                                    @[@1035,@1140]
-                                    ],
-                                @[
-                                    @[@450,@585],
-                                    @[@645,@810],
-                                    @[@1305,@1140]
-                                    ]
-                                ];
-    
+//    self.plexWestHall.hours = @[
+//                                @[
+//                                    @[@660,@840],
+//                                    @[@1005,@1170]
+//                                    ],
+//                                @[
+//                                    @[@450,@645],
+//                                    @[@705,@1005],
+//                                    @[@1035,@1170],
+//                                    @[@1200,@1410]
+//                                    ],
+//                                @[
+//                                    @[@450,@645],
+//                                    @[@705,@1005],
+//                                    @[@1035,@1170],
+//                                    @[@1200,@1410]
+//                                    ],
+//                                @[
+//                                    @[@450,@645],
+//                                    @[@705,@1005],
+//                                    @[@1035,@1170],
+//                                    @[@1200,@1410]
+//                                    ],
+//                                @[
+//                                    @[@450,@645],
+//                                    @[@705,@1005],
+//                                    @[@1035,@1170],
+//                                    @[@1200,@1410]
+//                                    ],
+//                                @[
+//                                    @[@450,@645],
+//                                    @[@705,@1005],
+//                                    @[@1035,@1140]
+//                                    ],
+//                                @[
+//                                    @[@450,@585],
+//                                    @[@645,@810],
+//                                    @[@1305,@1140]
+//                                    ]
+//                                ];
+//
+    self.plexWestHall.hours=[data objectForKey:@"plexWestHall"];
     self.plexWestHall.isOpen = self.plexWestHall.getIsOpen;
     self.plexWestLabel.text = [NSString stringWithFormat:@"%@ %@", self.plexWestHall.name, self.plexWestHall.timeLeft];
 
     
     
     self.elderHall.name = @"Elder";
-    self.elderHall.hours = @[
-                             @[
-                                 @[@0,@0]
-                                 ],
-                             @[
-                                 @[@675,@795],
-                                 @[@1005,@1140]
-                                 ],
-                             @[
-                                 @[@675,@795],
-                                 @[@1005,@1140]
-                                 ],
-                             @[
-                                 @[@675,@795],
-                                 @[@1005,@1140]
-                                 ],
-                             @[
-                                 @[@675,@795],
-                                 @[@1005,@1140]
-                                 ],
-                             @[
-                                 @[@675,@795],
-                                 @[@1005,@1140]
-                                 ],
-                             @[
-                                 @[@0,@0]
-                                 ],
-                             ];
-    
+//    self.elderHall.hours = @[
+//                             @[
+//                                 @[@0,@0]
+//                                 ],
+//                             @[
+//                                 @[@675,@795],
+//                                 @[@1005,@1140]
+//                                 ],
+//                             @[
+//                                 @[@675,@795],
+//                                 @[@1005,@1140]
+//                                 ],
+//                             @[
+//                                 @[@675,@795],
+//                                 @[@1005,@1140]
+//                                 ],
+//                             @[
+//                                 @[@675,@795],
+//                                 @[@1005,@1140]
+//                                 ],
+//                             @[
+//                                 @[@675,@795],
+//                                 @[@1005,@1140]
+//                                 ],
+//                             @[
+//                                 @[@0,@0]
+//                                 ],
+//                             ];
+//
+    self.elderHall.hours=[data objectForKey:@"elderHall"];
     self.elderHall.isOpen = self.elderHall.getIsOpen;
     self.elderLabel.text = [NSString stringWithFormat:@"%@ %@", self.elderHall.name, self.elderHall.timeLeft];
 
     
     self.sargentHall.name = @"Sargent";
-    self.sargentHall.hours = @[
-                               @[
-                                   @[@660,@840],
-                                   @[@1005,@1170]
-                                   ],
-                               @[
-                                   @[@450,@1200]
-                                   ],
-                               @[
-                                   @[@450,@1200]
-                                   ],
-                               @[
-                                   @[@450,@1200]
-                                   ],
-                               @[
-                                   @[@450,@1200]
-                                   ],
-                               @[
-                                   @[@450,@1140]
-                                   ],
-                               @[
-                                   @[@450,@585],
-                                   @[@645,@810]
-                                   ],
-                               ];
-    
+//    self.sargentHall.hours = @[
+//                               @[
+//                                   @[@660,@840],
+//                                   @[@1005,@1170]
+//                                   ],
+//                               @[
+//                                   @[@450,@1200]
+//                                   ],
+//                               @[
+//                                   @[@450,@1200]
+//                                   ],
+//                               @[
+//                                   @[@450,@1200]
+//                                   ],
+//                               @[
+//                                   @[@450,@1200]
+//                                   ],
+//                               @[
+//                                   @[@450,@1140]
+//                                   ],
+//                               @[
+//                                   @[@450,@585],
+//                                   @[@645,@810]
+//                                   ],
+//                               ];
+//
+    self.sargentHall.hours=[data objectForKey:@"sargentHall"];
     self.sargentHall.isOpen = self.sargentHall.getIsOpen;
     self.sargentLabel.text = [NSString stringWithFormat:@"%@ %@", self.sargentHall.name, self.sargentHall.timeLeft];
 
     
     self.willardHall.name = @"Willard";
-    self.willardHall.hours = @[
-                               @[
-                                   @[@0,@0]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1140]
-                                   ],
-                               @[
-                                   @[@0,@0]
-                                   ],
-                               ];
+//    self.willardHall.hours = @[
+//                               @[
+//                                   @[@0,@0]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1140]
+//                                   ],
+//                               @[
+//                                   @[@0,@0]
+//                                   ],
+//                               ];
+    self.willardHall.hours=[data objectForKey:@"willardHall"];
     self.willardHall.isOpen = self.willardHall.getIsOpen;
     self.willardLabel.text = [NSString stringWithFormat:@"%@ %@", self.willardHall.name, self.willardHall.timeLeft];
 

@@ -10,14 +10,39 @@
 
 @implementation XYZDiningHall
 
+-(NSArray*)parseTimes
+{
+    XYZTimeUtilities *time = [[XYZTimeUtilities alloc]init];
+
+    NSLog(@";) %@", [self.hours objectForKey:@"Monday"]);
+    if (time.day==1) {
+        self.todayHours=[self.hours objectForKey:@"Monday"];
+    } else if (time.day==2){
+        self.todayHours=[self.hours objectForKey:@"Tuesday"];
+    } else if (time.day==3){
+        self.todayHours=[self.hours objectForKey:@"Wednesday"];
+    } else if (time.day==4){
+        self.todayHours=[self.hours objectForKey:@"Thursday"];
+    } else if (time.day==5){
+        self.todayHours=[self.hours objectForKey:@"Friday"];
+    } else if (time.day==6){
+        self.todayHours=[self.hours objectForKey:@"Saturday"];
+    } else
+        self.todayHours=[self.hours objectForKey:@"Sunday"];
+    
+    NSLog(@"%@", self.todayHours);
+    return self.todayHours;
+}
+
 -(BOOL)getIsOpen
 {
-    
-    XYZTimeUtilities *time = [[XYZTimeUtilities alloc] init];
+
+    XYZTimeUtilities *time = [[XYZTimeUtilities alloc]init];
+    self.todayHours=[self parseTimes];
     BOOL isOpen = false;
-    for (int i=0; i<(int)[_hours[time.day] count]; i++) {
-        NSNumber* open = _hours[time.day][i][0];
-        NSNumber* close = _hours[time.day][i][1];
+    for (int i=0; i<(int)[self.todayHours count]; i++) {
+        NSNumber* open = self.todayHours[i][0];
+        NSNumber* close = self.todayHours[i][1];
         
         if ((time.minutes>=open.intValue)&&(time.minutes<=close.intValue))
         {
@@ -42,9 +67,9 @@
     }
     self.timeLeft = @"is closed for the day";
     self.newWidth=0;
-    for (int i=0; i<(int)[_hours[time.day] count]; i++)
+    for (int i=0; i<(int)[self.todayHours count]; i++)
     {
-        NSNumber* open = _hours[time.day][i][0];
+        NSNumber* open = self.todayHours[i][0];
         if (time.minutes<open.intValue)
         {
             self.timeLeft = [NSString stringWithFormat:@"%@ %@", @"opens at", [self toTime:open.intValue]];
