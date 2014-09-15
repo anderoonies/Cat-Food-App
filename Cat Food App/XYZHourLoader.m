@@ -18,11 +18,16 @@
                                                               URLWithString:@"https://raw.githubusercontent.com/anderoonies/Cat-Food-App/master/HoursArray"]];
         NSData *response = [NSURLConnection sendSynchronousRequest:request
                                                  returningResponse:nil error:nil];
-        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: nil];
+        NSError *e;
+        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &e];
         NSLog(@" hi ;) %@", jsonArray);
         
-        for (NSDictionary *item in jsonArray) {
-            NSLog(@"Item: %@", item);
+        if (!jsonArray) {
+            NSLog(@"Error parsing JSON: %@", e);
+        } else {
+            for(NSDictionary *item in jsonArray) {
+                NSLog(@"Item: %@", item);
+            }
         }
     }
     
