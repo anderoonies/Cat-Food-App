@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XYZDiningHall.h"
+#import "XYZHourLoader.h"
 
 @interface XYZCafesTableViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet XYZDiningHall *crowe;

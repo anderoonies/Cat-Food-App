@@ -8,6 +8,7 @@
 
 #import "XYZNorrisTableViewController.h"
 
+
 @interface XYZNorrisTableViewController ()
 
 @end
@@ -44,200 +45,209 @@
 
 - (void)loadInitialData
 {
+    XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    NSDictionary *data = hoursLoader.data;
     
     self.willies.name=@"Willie's";
-    self.willies.hours=@[
-                         @[
-                             @[@660,@900]
-                         ],
-                         @[
-                             @[@660,@900]
-                         ],
-                         @[
-                             @[@660,@900]
-                         ],
-                         @[
-                             @[@660,@900]
-                         ],
-                         @[
-                             @[@660,@900]
-                         ],
-                         @[
-                             @[@660,@900]
-                         ],
-                         @[
-                             @[@0,@0]
-                         ]
-                         ];
-    
+//    self.willies.hours=@[
+//                         @[
+//                             @[@660,@900]
+//                         ],
+//                         @[
+//                             @[@660,@900]
+//                         ],
+//                         @[
+//                             @[@660,@900]
+//                         ],
+//                         @[
+//                             @[@660,@900]
+//                         ],
+//                         @[
+//                             @[@660,@900]
+//                         ],
+//                         @[
+//                             @[@660,@900]
+//                         ],
+//                         @[
+//                             @[@0,@0]
+//                         ]
+//                         ];
+//
+    self.willies.hours=[data objectForKey:@"willies"];
     self.willies.isOpen=self.willies.getIsOpen;
     self.williesLabel.text = [NSString stringWithFormat:@"%@ %@", self.willies.name, self.willies.timeLeft];
     
     self.paws.name=@"Paws";
-    self.paws.hours=@[
-                      @[
-                          @[@660,@1380]
-                          ],
-                      @[
-                          @[@480,@1380]
-                          ],
-                      @[
-                          @[@480,@1380]
-                          ],
-                      @[
-                          @[@480,@1380]
-                          ],
-                      @[
-                          @[@480,@1380]
-                          ],
-                      @[
-                          @[@480,@1260]
-                          ],
-                      @[
-                          @[@600,@1380]
-                          ]
-                      ];
-    
+//    self.paws.hours=@[
+//                      @[
+//                          @[@660,@1380]
+//                          ],
+//                      @[
+//                          @[@480,@1380]
+//                          ],
+//                      @[
+//                          @[@480,@1380]
+//                          ],
+//                      @[
+//                          @[@480,@1380]
+//                          ],
+//                      @[
+//                          @[@480,@1380]
+//                          ],
+//                      @[
+//                          @[@480,@1260]
+//                          ],
+//                      @[
+//                          @[@600,@1380]
+//                          ]
+//                      ];
+//
+    self.paws.hours=[data objectForKey:@"paws"];
     self.paws.isOpen=self.paws.getIsOpen;
     self.pawsLabel.text = [NSString stringWithFormat:@"%@ %@", self.paws.name, self.paws.timeLeft];
     
     self.subway.name=@"Subway";
-    self.subway.hours=@[
-                        @[
-                            @[@660,@1260]
-                            ],
-                        @[
-                            @[@660,@1260]
-                            ],
-                        @[
-                            @[@660,@1260]
-                            ],
-                        @[
-                            @[@660,@1260]
-                            ],
-                        @[
-                            @[@660,@1260]
-                            ],
-                        @[
-                            @[@660,@1260]
-                            ],
-                        @[
-                            @[@660,@1260]
-                            ]
-                        ];
-    
+//    self.subway.hours=@[
+//                        @[
+//                            @[@660,@1260]
+//                            ],
+//                        @[
+//                            @[@660,@1260]
+//                            ],
+//                        @[
+//                            @[@660,@1260]
+//                            ],
+//                        @[
+//                            @[@660,@1260]
+//                            ],
+//                        @[
+//                            @[@660,@1260]
+//                            ],
+//                        @[
+//                            @[@660,@1260]
+//                            ],
+//                        @[
+//                            @[@660,@1260]
+//                            ]
+//                        ];
+//
+    self.subway.hours=[data objectForKey:@"subway"];
     self.subway.isOpen=self.subway.getIsOpen;
     self.subwayLabel.text = [NSString stringWithFormat:@"%@ %@", self.subway.name, self.subway.timeLeft];
     
     self.dunkin.name=@"Dunkin'";
-    self.dunkin.hours=@[
-                        @[
-                            @[@720,@1425]
-                            ],
-                        @[
-                            @[@480,@1425]
-                            ],
-                        @[
-                            @[@480,@1425]
-                            ],
-                        @[
-                            @[@480,@1425]
-                            ],
-                        @[
-                            @[@480,@1425]
-                            ],
-                        @[
-                            @[@480,@1140]
-                            ],
-                        @[
-                            @[@720,@1140]
-                            ]
-                        ];
-    
+//    self.dunkin.hours=@[
+//                        @[
+//                            @[@720,@1425]
+//                            ],
+//                        @[
+//                            @[@480,@1425]
+//                            ],
+//                        @[
+//                            @[@480,@1425]
+//                            ],
+//                        @[
+//                            @[@480,@1425]
+//                            ],
+//                        @[
+//                            @[@480,@1425]
+//                            ],
+//                        @[
+//                            @[@480,@1140]
+//                            ],
+//                        @[
+//                            @[@720,@1140]
+//                            ]
+//                        ];
+//
+    self.dunkin.hours=[data objectForKey:@"dunkin"];
     self.dunkin.isOpen=self.dunkin.getIsOpen;
     self.dunkinLabel.text = [NSString stringWithFormat:@"%@ %@", self.dunkin.name, self.dunkin.timeLeft];
     
     self.pizza.name=@"Pizza";
-    self.pizza.hours=@[
-                       @[
-                           @[@660,@1380]
-                           ],
-                       @[
-                           @[@660,@1380]
-                           ],
-                       @[
-                           @[@660,@1380]
-                           ],
-                       @[
-                           @[@660,@1380]
-                           ],
-                       @[
-                           @[@660,@1380]
-                           ],
-                       @[
-                           @[@660,@1260]
-                           ],
-                       @[
-                           @[@660,@1260]
-                           ]
-                       ];
-    
+//    self.pizza.hours=@[
+//                       @[
+//                           @[@660,@1380]
+//                           ],
+//                       @[
+//                           @[@660,@1380]
+//                           ],
+//                       @[
+//                           @[@660,@1380]
+//                           ],
+//                       @[
+//                           @[@660,@1380]
+//                           ],
+//                       @[
+//                           @[@660,@1380]
+//                           ],
+//                       @[
+//                           @[@660,@1260]
+//                           ],
+//                       @[
+//                           @[@660,@1260]
+//                           ]
+//                       ];
+//
+    self.pizza.hours=[data objectForKey:@"pizza"];
     self.pizza.isOpen=self.pizza.getIsOpen;
     self.pizzaLabel.text = [NSString stringWithFormat:@"%@ %@", self.pizza.name, self.pizza.timeLeft];
     
     self.norbucks.name=@"Starbucks";
-    self.norbucks.hours=@[
-                          @[
-                              @[@600,@1425]
-                              ],
-                          @[
-                              @[@480, @1425]
-                              ],
-                          @[
-                              @[@480, @1425]
-                              ],
-                          @[
-                              @[@480, @1425]
-                              ],
-                          @[
-                              @[@480, @1425]
-                              ],
-                          @[
-                              @[@480, @1260]
-                              ],
-                          @[
-                              @[@540, @1260]
-                              ]
-                          ];
-    
+//    self.norbucks.hours=@[
+//                          @[
+//                              @[@600,@1425]
+//                              ],
+//                          @[
+//                              @[@480, @1425]
+//                              ],
+//                          @[
+//                              @[@480, @1425]
+//                              ],
+//                          @[
+//                              @[@480, @1425]
+//                              ],
+//                          @[
+//                              @[@480, @1425]
+//                              ],
+//                          @[
+//                              @[@480, @1260]
+//                              ],
+//                          @[
+//                              @[@540, @1260]
+//                              ]
+//                          ];
+//
+    self.norbucks.hours=[data objectForKey:@"norbucks"];
     self.norbucks.isOpen=self.norbucks.getIsOpen;
     self.norbucksLabel.text = [NSString stringWithFormat:@"%@ %@", self.norbucks.name, self.norbucks.timeLeft];
     
     self.frontera.name=@"Frontera";
-    self.frontera.hours=@[
-                          @[
-                              @[@0,@0]
-                              ],
-                          @[
-                              @[@660,@1140]
-                              ],
-                          @[
-                              @[@660,@1140]
-                              ],
-                          @[
-                              @[@660,@1140]
-                              ],
-                          @[
-                              @[@660,@1140]
-                              ],
-                          @[
-                              @[@660,@1140]
-                              ],
-                          @[
-                              @[@660,@900]
-                              ]
-                          ];
-    
+//    self.frontera.hours=@[
+//                          @[
+//                              @[@0,@0]
+//                              ],
+//                          @[
+//                              @[@660,@1140]
+//                              ],
+//                          @[
+//                              @[@660,@1140]
+//                              ],
+//                          @[
+//                              @[@660,@1140]
+//                              ],
+//                          @[
+//                              @[@660,@1140]
+//                              ],
+//                          @[
+//                              @[@660,@1140]
+//                              ],
+//                          @[
+//                              @[@660,@900]
+//                              ]
+//                          ];
+//
+    self.frontera.hours=[data objectForKey:@"frontera"];
     self.frontera.isOpen=self.frontera.getIsOpen;
     self.fronteraLabel.text = [NSString stringWithFormat:@"%@ %@", self.frontera.name, self.frontera.timeLeft];
 }

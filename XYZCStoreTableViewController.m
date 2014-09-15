@@ -54,7 +54,7 @@
 - (void)loadInitialData
 {
     XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
-    NSDictionary *hoursArray = hoursLoader.data;
+    NSDictionary *data = hoursLoader.data;
     self.willardCStore.name = @"Willard";
     self.willardCStore.hours = @[
                                @[
@@ -90,66 +90,67 @@
                                    ]
                                ];
     
-    self.willardCStore.hours=hoursArray[self.willardCStore.name];    
+    self.willardCStore.hours=[data objectForKey:@"willardCStore"];
     self.willardCStore.isOpen = self.willardCStore.getIsOpen;
     self.willardLabel.text = [NSString stringWithFormat:@"%@ %@", self.willardCStore.name, self.willardCStore.timeLeft];
 
 
     
     self.plexCStore.name = @"Plex";
-    self.plexCStore.hours =@[
-                             @[
-                                 @[@660,@1440]
-                                 ],
-                             @[
-                                 @[@450,@1440]
-                                 ],
-                             @[
-                                 @[@450,@1440]
-                                 ],
-                             @[
-                                 @[@450,@1440]
-                                 ],
-                             @[
-                                 @[@450,@1440]
-                                 ],
-                             @[
-                                 @[@450,@1140]
-                                 ],
-                             @[
-                                 @[@450,@1140]
-                                 ],
-                             ];
-    
+//    self.plexCStore.hours =@[
+//                             @[
+//                                 @[@660,@1440]
+//                                 ],
+//                             @[
+//                                 @[@450,@1440]
+//                                 ],
+//                             @[
+//                                 @[@450,@1440]
+//                                 ],
+//                             @[
+//                                 @[@450,@1440]
+//                                 ],
+//                             @[
+//                                 @[@450,@1440]
+//                                 ],
+//                             @[
+//                                 @[@450,@1140]
+//                                 ],
+//                             @[
+//                                 @[@450,@1140]
+//                                 ],
+//                             ];
+    self.plexCStore.hours=[data objectForKey:@"plexCStore"];
     self.plexCStore.isOpen = self.plexCStore.getIsOpen;
     self.plexLabel.text = [NSString stringWithFormat:@"%@ %@", self.plexCStore.name, self.plexCStore.timeLeft];
 
     
     self.hinmanCStore.name = @"Hinman";
-    self.hinmanCStore.hours = @[
-                                @[
-                                    @[@660,@1440]
-                                    ],
-                                @[
-                                    @[@450,@1440]
-                                    ],
-                                @[
-                                    @[@450,@1440]
-                                    ],
-                                @[
-                                    @[@450,@1440]
-                                    ],
-                                @[
-                                    @[@450,@1440]
-                                    ],
-                                @[
-                                    @[@450,@1140]
-                                    ],
-                                @[
-                                    @[@645,@1140]
-                                    ]
-                                ];
-    
+//    self.hinmanCStore.hours = @[
+//                                @[
+//                                    @[@660,@1440]
+//                                    ],
+//                                @[
+//                                    @[@450,@1440]
+//                                    ],
+//                                @[
+//                                    @[@450,@1440]
+//                                    ],
+//                                @[
+//                                    @[@450,@1440]
+//                                    ],
+//                                @[
+//                                    @[@450,@1440]
+//                                    ],
+//                                @[
+//                                    @[@450,@1140]
+//                                    ],
+//                                @[
+//                                    @[@645,@1140]
+//                                    ]
+//                                ];
+//
+    self.hinmanCStore.hours=[data objectForKey:@"hinmanCStore"];
     self.hinmanCStore.isOpen = self.hinmanCStore.getIsOpen;
     self.hinmanLabel.text = [NSString stringWithFormat:@"%@ %@", self.hinmanCStore.name, self.hinmanCStore.timeLeft];
 

@@ -81,183 +81,191 @@
 
 - (void)loadInitialData
 {
+    XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    NSDictionary *data = hoursLoader.data;
     self.crowe.name = @"Crowe";
-    self.crowe.hours=@[
-                       @[
-                           @[@0,@0]
-                           ],
-                       @[
-                           @[@480,@1020]
-                           ],
-                       @[
-                           @[@480,@1020]
-                           ],
-                       @[
-                           @[@480,@1020]
-                           ],
-                       @[
-                           @[@480,@1020]
-                           ],
-                       @[
-                           @[@480,@900]
-                           ],
-                       @[
-                           @[@0,@0]
-                           ]
-                       ];
-    
+//    self.crowe.hours=@[
+//                       @[
+//                           @[@0,@0]
+//                           ],
+//                       @[
+//                           @[@480,@1020]
+//                           ],
+//                       @[
+//                           @[@480,@1020]
+//                           ],
+//                       @[
+//                           @[@480,@1020]
+//                           ],
+//                       @[
+//                           @[@480,@1020]
+//                           ],
+//                       @[
+//                           @[@480,@900]
+//                           ],
+//                       @[
+//                           @[@0,@0]
+//                           ]
+//                       ];
+//
+    self.crowe.hours=[data objectForKey:@"crowe"];
     self.crowe.isOpen=self.crowe.getIsOpen;
     self.croweLabel.text = [NSString stringWithFormat:@"%@ %@", self.crowe.name, self.crowe.timeLeft];
     
     
     self.einstein.name=@"Einstein";
-    self.einstein.hours=@[
-                          @[
-                              @[@0,@0]
-                              ],
-                          @[
-                              @[@480,@960]
-                              ],
-                          @[
-                              @[@480,@960]
-                              ],
-                          @[
-                              @[@480,@960]
-                              ],
-                          @[
-                              @[@480,@960]
-                              ],
-                          @[
-                              @[@480,@900]
-                              ],
-                          @[
-                              @[@0,@0]
-                              ]
-                          ];
-    
+//    self.einstein.hours=@[
+//                          @[
+//                              @[@0,@0]
+//                              ],
+//                          @[
+//                              @[@480,@960]
+//                              ],
+//                          @[
+//                              @[@480,@960]
+//                              ],
+//                          @[
+//                              @[@480,@960]
+//                              ],
+//                          @[
+//                              @[@480,@960]
+//                              ],
+//                          @[
+//                              @[@480,@900]
+//                              ],
+//                          @[
+//                              @[@0,@0]
+//                              ]
+//                          ];
+//
+    self.einstein.hours=[data objectForKey:@"einstein"];
     self.einstein.isOpen=self.einstein.getIsOpen;
     self.einsteinLabel.text = [NSString stringWithFormat:@"%@ %@", self.einstein.name, self.einstein.timeLeft];
     
     self.frans.name=@"Fran's";
-    self.frans.hours=@[
-                       @[
-                           @[@1140,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@1200,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@1200,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@1200,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@1200,@1440]
-                       ],
-                       @[
-                           @[@1,@120]
-                       ],
-                       @[
-                           @[@0,@0]
-                       ]
-                       ];
-    
+//    self.frans.hours=@[
+//                       @[
+//                           @[@1140,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@1200,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@1200,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@1200,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@1200,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120]
+//                       ],
+//                       @[
+//                           @[@0,@0]
+//                       ]
+//                       ];
+//
+    self.frans.hours=[data objectForKey:@"frans"];
     self.frans.isOpen=self.frans.getIsOpen;
     self.fransLabel.text = [NSString stringWithFormat:@"%@ %@", self.frans.name, self.frans.timeLeft];
     
     self.lisas.name=@"Lisa's";
-    self.lisas.hours=@[
-                       @[
-                           @[@1,@120],
-                           @[@720,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@660,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@660,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@660,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@660,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@660,@1440]
-                       ],
-                       @[
-                           @[@1,@120],
-                           @[@660,@1440]
-                       ]
-                       ];
-    
+//    self.lisas.hours=@[
+//                       @[
+//                           @[@1,@120],
+//                           @[@720,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@660,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@660,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@660,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@660,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@660,@1440]
+//                       ],
+//                       @[
+//                           @[@1,@120],
+//                           @[@660,@1440]
+//                       ]
+//                       ];
+//
+    self.lisas.hours=[data objectForKey:@"lisas"];
     self.lisas.isOpen=self.lisas.getIsOpen;
     self.lisasLabel.text=[NSString stringWithFormat:@"%@ %@", self.lisas.name, self.lisas.timeLeft];
     
     self.plaza.name=@"Plaza";
-    self.plaza.hours=@[
-                       @[
-                           @[@1020,@1440]
-                       ],
-                       @[
-                           @[@510,@1440]
-                       ],
-                       @[
-                           @[@510,@1440]
-                       ],
-                       @[
-                           @[@510,@1440]
-                       ],
-                       @[
-                           @[@510,@1440]
-                       ],
-                       @[
-                           @[@510,@900]
-                       ],
-                       @[
-                           @[@720,@960]
-                       ]
-                       ];
-    
+//    self.plaza.hours=@[
+//                       @[
+//                           @[@1020,@1440]
+//                       ],
+//                       @[
+//                           @[@510,@1440]
+//                       ],
+//                       @[
+//                           @[@510,@1440]
+//                       ],
+//                       @[
+//                           @[@510,@1440]
+//                       ],
+//                       @[
+//                           @[@510,@1440]
+//                       ],
+//                       @[
+//                           @[@510,@900]
+//                       ],
+//                       @[
+//                           @[@720,@960]
+//                       ]
+//                       ];
+//
+    self.plaza.hours=[data objectForKey:@"plaza"];
     self.plaza.isOpen=self.plaza.getIsOpen;
     self.plazaLabel.text=[NSString stringWithFormat:@"%@ %@", self.plaza.name, self.plaza.timeLeft];
     
     self.techx.name=@"Tech";
-    self.techx.hours=@[
-                       @[
-                           @[@0,@0]
-                       ],
-                       @[
-                           @[@450,@1110]
-                       ],
-                       @[
-                           @[@450,@1110]
-                       ],
-                       @[
-                           @[@450,@1110]
-                       ],
-                       @[
-                           @[@450,@1110]
-                       ],
-                       @[
-                           @[@450,@900]
-                       ],
-                       @[
-                           @[@0,@0]
-                       ]
-                       ];
-    
+//    self.techx.hours=@[
+//                       @[
+//                           @[@0,@0]
+//                       ],
+//                       @[
+//                           @[@450,@1110]
+//                       ],
+//                       @[
+//                           @[@450,@1110]
+//                       ],
+//                       @[
+//                           @[@450,@1110]
+//                       ],
+//                       @[
+//                           @[@450,@1110]
+//                       ],
+//                       @[
+//                           @[@450,@900]
+//                       ],
+//                       @[
+//                           @[@0,@0]
+//                       ]
+//                       ];
+//
+    self.techx.hours=[data objectForKey:@"techx"];
     self.techx.isOpen=self.techx.getIsOpen;
     self.techxLabel.text = [NSString stringWithFormat:@"%@ %@", self.techx.name, self.techx.timeLeft];
     
