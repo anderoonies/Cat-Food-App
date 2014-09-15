@@ -20,7 +20,6 @@
                                                  returningResponse:nil error:nil];
         NSError *e;
         NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &e];
-        NSLog(@" hi ;) %@", jsonArray);
         
         if (!jsonArray) {
             NSLog(@"Error parsing JSON: %@", e);
