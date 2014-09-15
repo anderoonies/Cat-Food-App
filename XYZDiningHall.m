@@ -12,6 +12,7 @@
 
 -(BOOL)getIsOpen
 {
+    
     XYZTimeUtilities *time = [[XYZTimeUtilities alloc] init];
     BOOL isOpen = false;
     for (int i=0; i<(int)[_hours[time.day] count]; i++) {

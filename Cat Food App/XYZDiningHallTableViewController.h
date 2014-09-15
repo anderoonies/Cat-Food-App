@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XYZDiningHall.h"
+#import "XYZHourLoader.h"
 
 @interface XYZDiningHallTableViewController : UITableViewController
 
