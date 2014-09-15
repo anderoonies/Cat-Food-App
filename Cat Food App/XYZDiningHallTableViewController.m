@@ -29,7 +29,7 @@
     [self loadInitialData];
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, CGRectGetHeight(self.tabBarController.tabBar.frame), 0.0f);
-    [[XYZHourLoader init] loadMinutes];
+    XYZHourLoader *hourLoad = [[XYZHourLoader alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.

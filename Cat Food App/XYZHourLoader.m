@@ -10,13 +10,24 @@
 
 @implementation XYZHourLoader
 
--(void)loadMinutes{
+-(id) init {
     
-    self.data=[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://github.com/anderoonies/Cat-Food-App/blob/master/Cat%20Food%20App/HoursArray.strings"]];
-    NSError *error=nil;
-    NSDictionary *response=[NSJSONSerialization JSONObjectWithData:_data options:NSJSONReadingMutableContainers error:&error];
-    NSLog(@"%@",self.data);
-    NSLog(@"%@",response);
+    if (self = [super init])
+    {
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL
+                                                              URLWithString:@"https://raw.githubusercontent.com/anderoonies/Cat-Food-App/master/HoursArray"]];
+        NSData *response = [NSURLConnection sendSynchronousRequest:request
+                                                 returningResponse:nil error:nil];
+        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: nil];
+        NSLog(@" hi ;) %@", jsonArray);
+        
+        for (NSDictionary *item in jsonArray) {
+            NSLog(@"Item: %@", item);
+        }
+    }
+    
+    return self;
 }
+
 
 @end

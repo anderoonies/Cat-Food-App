@@ -12,7 +12,7 @@
 
 @property NSData *data;
 
-- (void) loadMinutes;
+//- (void) loadMinutes;
 
 
 @end
