@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8619D36219C72C4900378416 /* HoursArray.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8619D36119C72C4900378416 /* HoursArray.strings */; };
 		863D887819883CC900AE66A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887719883CC900AE66A7 /* Foundation.framework */; };
 		863D887C19883CC900AE66A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887B19883CC900AE66A7 /* UIKit.framework */; };
 		863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 863D888019883CC900AE66A7 /* InfoPlist.strings */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8619D36119C72C4900378416 /* HoursArray.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HoursArray.strings; sourceTree = "<group>"; };
 		863D887419883CC900AE66A7 /* Cat Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863D887719883CC900AE66A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		863D887919883CC900AE66A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,6 +156,7 @@
 			children = (
 				86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */,
 				86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */,
+				8619D36119C72C4900378416 /* HoursArray.strings */,
 				863D88B81988428B00AE66A7 /* XYZDiningHall.h */,
 				863D88B91988428B00AE66A7 /* XYZDiningHall.m */,
 				86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */,
@@ -284,6 +287,7 @@
 				86B66AE219BB6FEC00977EFC /* Main_iPad.storyboard in Resources */,
 				86B66AEA19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png in Resources */,
 				863D888B19883CC900AE66A7 /* Main_iPhone.storyboard in Resources */,
+				8619D36219C72C4900378416 /* HoursArray.strings in Resources */,
 				86B66AEB19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png in Resources */,
 				863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */,
 			);
