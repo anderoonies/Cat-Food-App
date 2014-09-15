@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8619D36519C741EF00378416 /* XYZHourLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8619D36419C741EF00378416 /* XYZHourLoader.m */; };
-		8619D36719C7443700378416 /* HoursArray.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8619D36619C7443700378416 /* HoursArray.rtf */; };
+		8619D36919C7448C00378416 /* HoursArray in Resources */ = {isa = PBXBuildFile; fileRef = 8619D36819C7448C00378416 /* HoursArray */; };
 		863D887819883CC900AE66A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887719883CC900AE66A7 /* Foundation.framework */; };
 		863D887C19883CC900AE66A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887B19883CC900AE66A7 /* UIKit.framework */; };
 		863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 863D888019883CC900AE66A7 /* InfoPlist.strings */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		8619D36319C741EF00378416 /* XYZHourLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZHourLoader.h; sourceTree = "<group>"; };
 		8619D36419C741EF00378416 /* XYZHourLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZHourLoader.m; sourceTree = "<group>"; };
-		8619D36619C7443700378416 /* HoursArray.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = HoursArray.rtf; sourceTree = "<group>"; };
+		8619D36819C7448C00378416 /* HoursArray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoursArray; sourceTree = "<group>"; };
 		863D887419883CC900AE66A7 /* Cat Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863D887719883CC900AE66A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		863D887919883CC900AE66A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,7 +114,7 @@
 		863D886B19883CC900AE66A7 = {
 			isa = PBXGroup;
 			children = (
-				8619D36619C7443700378416 /* HoursArray.rtf */,
+				8619D36819C7448C00378416 /* HoursArray */,
 				86B66AE819BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png */,
 				86B66AE919BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png */,
 				86B66AE119BB6FEC00977EFC /* Main_iPad.storyboard */,
@@ -290,8 +290,8 @@
 			files = (
 				863D889619883CC900AE66A7 /* Images.xcassets in Resources */,
 				86B66AE219BB6FEC00977EFC /* Main_iPad.storyboard in Resources */,
+				8619D36919C7448C00378416 /* HoursArray in Resources */,
 				86B66AEA19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png in Resources */,
-				8619D36719C7443700378416 /* HoursArray.rtf in Resources */,
 				863D888B19883CC900AE66A7 /* Main_iPhone.storyboard in Resources */,
 				86B66AEB19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png in Resources */,
 				863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */,
