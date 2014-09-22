@@ -82,6 +82,7 @@
 {
     NSString* hours = [@((((rawMinutes/60)%24)%12)) stringValue];
     NSString* minutes = [@(rawMinutes%60) stringValue];
+    NSString* ampm = (rawMinutes<720) ? @"AM" : @"PM";
     if ([hours isEqual:@"0"]) {
         hours=@"12";
     }
@@ -89,7 +90,7 @@
         minutes=@"00";
     }
     
-    NSString* time = [NSString stringWithFormat:@"%@:%@", hours, minutes];
+    NSString* time = [NSString stringWithFormat:@"%@:%@ %@", hours, minutes, ampm];
     
     return time;
 }
