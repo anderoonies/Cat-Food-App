@@ -54,42 +54,44 @@
 - (void)loadInitialData
 {
     XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    [hoursLoader loadHours];
+
     NSDictionary *data = hoursLoader.data;
     self.willardCStore.name = @"Willard";
-    self.willardCStore.hours = @[
-                               @[
-                                   @[@0,@0]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1440],
-                                   @[@0,@120]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1440],
-                                   @[@0,@120]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1440],
-                                   @[@0,@120]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1440],
-                                   @[@0,@120]
-                                   ],
-                               @[
-                                   @[@675,@795],
-                                   @[@1005,@1440],
-                                   @[@0,@120]
-                                   ],
-                               @[
-                                   @[@0,@0]
-                                   ]
-                               ];
-    
+//    self.willardCStore.hours = @[
+//                               @[
+//                                   @[@0,@0]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1440],
+//                                   @[@0,@120]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1440],
+//                                   @[@0,@120]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1440],
+//                                   @[@0,@120]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1440],
+//                                   @[@0,@120]
+//                                   ],
+//                               @[
+//                                   @[@675,@795],
+//                                   @[@1005,@1440],
+//                                   @[@0,@120]
+//                                   ],
+//                               @[
+//                                   @[@0,@0]
+//                                   ]
+//                               ];
+//    
     self.willardCStore.hours=[data objectForKey:@"willardCStore"];
     self.willardCStore.isOpen = self.willardCStore.getIsOpen;
     self.willardLabel.text = [NSString stringWithFormat:@"%@ %@", self.willardCStore.name, self.willardCStore.timeLeft];

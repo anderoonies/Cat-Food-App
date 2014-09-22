@@ -14,7 +14,6 @@
 {
     XYZTimeUtilities *time = [[XYZTimeUtilities alloc]init];
 
-    NSLog(@";) %@", [self.hours objectForKey:@"Monday"]);
     if (time.day==1) {
         self.todayHours=[self.hours objectForKey:@"Monday"];
     } else if (time.day==2){
@@ -30,7 +29,6 @@
     } else
         self.todayHours=[self.hours objectForKey:@"Sunday"];
     
-    NSLog(@"%@", self.todayHours);
     return self.todayHours;
 }
 

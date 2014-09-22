@@ -82,6 +82,8 @@
 - (void)loadInitialData
 {
     XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    [hoursLoader loadHours];
+
     NSDictionary *data = hoursLoader.data;
     self.crowe.name = @"Crowe";
 //    self.crowe.hours=@[

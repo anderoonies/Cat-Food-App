@@ -12,6 +12,8 @@
 
 @property NSDictionary *data;
 
+-(void)loadHours;
+
 
 
 @end

@@ -12,20 +12,24 @@
 	<dict>
 		<key>6311DEC8-DF4D-4A50-9C0A-750D40E56F07</key>
 		<string>https://github.com/anderoonies/Cat-Food-App.git</string>
+		<key>D4C3E6559CEB9A16E1E2830F8BACD944A32F8B6D</key>
+		<string>https://github.com/anderoonies/Cat-Food-App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cat Food.xcodeproj/project.xcworkspace</string>
+	<string>Cat Food.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6311DEC8-DF4D-4A50-9C0A-750D40E56F07</key>
+		<string>../../../Cat Food App</string>
+		<key>D4C3E6559CEB9A16E1E2830F8BACD944A32F8B6D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/anderoonies/Cat-Food-App.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6311DEC8-DF4D-4A50-9C0A-750D40E56F07</string>
+	<string>D4C3E6559CEB9A16E1E2830F8BACD944A32F8B6D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>6311DEC8-DF4D-4A50-9C0A-750D40E56F07</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Cat Food App</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4C3E6559CEB9A16E1E2830F8BACD944A32F8B6D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cat%20Food%20App</string>
 		</dict>
 	</array>
 </dict>

@@ -12,24 +12,47 @@
 
 -(id) init {
     
-    if (self = [super init])
-    {
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL
-                                                              URLWithString:@"https://raw.githubusercontent.com/anderoonies/Cat-Food-App/master/HoursArray"]];
-        NSData *response = [NSURLConnection sendSynchronousRequest:request
-                                                 returningResponse:nil error:nil];
-        NSError *e;
-        NSDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &e];
+    self=[super init];
         
-        if (!jsonArray) {
-            NSLog(@"Error parsing JSON: %@", e);
-        }
-        _data=jsonArray;
+    return self;
+
+}
+
+-(void) loadHours{
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL
+                                                          URLWithString:@"https://raw.githubusercontent.com/anderoonies/Cat-Food-App/master/HoursArray"]];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request
+                                             returningResponse:nil error:nil];
+    
+    
+    
+    if(!response){
+        NSLog(@"I made it");
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Error"
+                                                       message: @"Could not establish connection"
+                                                      delegate: self
+                                             cancelButtonTitle:@"Cancel"
+                                             otherButtonTitles:@"OK",nil];
         
+        [alert show];
+        return;
     }
     
-    return self;
+    NSError *e;
+    
+    
+    NSDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &e];
+    
+    if (!jsonArray) {
+        NSLog(@"Error parsing JSON: %@", e);
+        
+        
+    }
+    _data=jsonArray;
+    
 }
 
 
+
 @end
+

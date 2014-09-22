@@ -46,6 +46,7 @@
 - (void)loadInitialData
 {
     XYZHourLoader *hoursLoader = [[XYZHourLoader alloc] init];
+    [hoursLoader loadHours];
     NSDictionary *data = hoursLoader.data;
     
     self.willies.name=@"Willie's";
