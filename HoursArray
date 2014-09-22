@@ -29,10 +29,10 @@
     "allisonHall": {
         "Sunday": [[660,1140]],
         "Monday": [[450,1140]],
-        "Tuesday": [[450,1140]],,
-        "Wednesday": [[450,1140]],,
-        "Thursday": [[450,1140]],,
-        "Friday": [[450,1140]],,
+        "Tuesday": [[450,1140]],
+        "Wednesday": [[450,1140]],
+        "Thursday": [[450,1140]],
+        "Friday": [[450,1140]],
         "Saturday": [[660,1140]]
     },
     "hinmanHall": {
@@ -41,7 +41,7 @@
         "Tuesday": [[450,1200]],
         "Wednesday": [[450,1200]],
         "Thursday": [[450,1200]],
-        "Friday": [[[450,1140]],
+        "Friday": [[450,1140]],
         "Saturday": [[0,0]]
     },
     "plexEastHall": {
