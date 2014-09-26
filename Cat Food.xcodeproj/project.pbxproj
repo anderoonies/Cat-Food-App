@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8619D36519C741EF00378416 /* XYZHourLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8619D36419C741EF00378416 /* XYZHourLoader.m */; };
-		8619D36919C7448C00378416 /* HoursArray in Resources */ = {isa = PBXBuildFile; fileRef = 8619D36819C7448C00378416 /* HoursArray */; };
+		8619D36919C7448C00378416 /* HoursArray.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8619D36819C7448C00378416 /* HoursArray.strings */; };
 		863D887819883CC900AE66A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887719883CC900AE66A7 /* Foundation.framework */; };
 		863D887C19883CC900AE66A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863D887B19883CC900AE66A7 /* UIKit.framework */; };
 		863D888219883CC900AE66A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 863D888019883CC900AE66A7 /* InfoPlist.strings */; };
@@ -43,9 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8619D36319C741EF00378416 /* XYZHourLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZHourLoader.h; sourceTree = "<group>"; };
-		8619D36419C741EF00378416 /* XYZHourLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZHourLoader.m; sourceTree = "<group>"; };
-		8619D36819C7448C00378416 /* HoursArray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoursArray; sourceTree = "<group>"; };
+		8619D36319C741EF00378416 /* XYZHourLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZHourLoader.h; path = Utilites/XYZHourLoader.h; sourceTree = "<group>"; };
+		8619D36419C741EF00378416 /* XYZHourLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZHourLoader.m; path = Utilites/XYZHourLoader.m; sourceTree = "<group>"; };
+		8619D36819C7448C00378416 /* HoursArray.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = HoursArray.strings; path = Utilites/HoursArray.strings; sourceTree = "<group>"; };
 		863D887419883CC900AE66A7 /* Cat Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863D887719883CC900AE66A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		863D887919883CC900AE66A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,12 +62,12 @@
 		863D88A419883CC900AE66A7 /* Cat FoodTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cat FoodTests-Info.plist"; sourceTree = "<group>"; };
 		863D88A619883CC900AE66A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		863D88A819883CC900AE66A7 /* Cat_Food_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat_Food_AppTests.m; sourceTree = "<group>"; };
-		863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZDiningHallTableViewController.h; sourceTree = "<group>"; };
-		863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZDiningHallTableViewController.m; sourceTree = "<group>"; };
+		863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZDiningHallTableViewController.h; path = Locations/XYZDiningHallTableViewController.h; sourceTree = "<group>"; };
+		863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZDiningHallTableViewController.m; path = Locations/XYZDiningHallTableViewController.m; sourceTree = "<group>"; };
 		863D88B81988428B00AE66A7 /* XYZDiningHall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZDiningHall.h; path = ../XYZDiningHall.h; sourceTree = "<group>"; };
 		863D88B91988428B00AE66A7 /* XYZDiningHall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZDiningHall.m; path = ../XYZDiningHall.m; sourceTree = "<group>"; };
-		86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZNorrisTableViewController.h; sourceTree = "<group>"; };
-		86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZNorrisTableViewController.m; sourceTree = "<group>"; };
+		86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZNorrisTableViewController.h; path = Locations/XYZNorrisTableViewController.h; sourceTree = "<group>"; };
+		86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZNorrisTableViewController.m; path = Locations/XYZNorrisTableViewController.m; sourceTree = "<group>"; };
 		86B66AE119BB6FEC00977EFC /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		86B66AE819BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png"; sourceTree = "<group>"; };
 		86B66AE919BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png"; sourceTree = "<group>"; };
@@ -79,13 +79,13 @@
 		86C64C4B198F0FE5002DC4A7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		86C64C4D198F0FED002DC4A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		86C64C4F198F0FF6002DC4A7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZCafesTableViewController.h; sourceTree = "<group>"; };
-		86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZCafesTableViewController.m; sourceTree = "<group>"; };
+		86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZCafesTableViewController.h; path = Locations/XYZCafesTableViewController.h; sourceTree = "<group>"; };
+		86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZCafesTableViewController.m; path = Locations/XYZCafesTableViewController.m; sourceTree = "<group>"; };
 		86D3159719A131F900FB993A /* Cat Food-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Cat Food-Info.plist"; sourceTree = "<group>"; };
-		86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTimeUtilities.h; sourceTree = "<group>"; };
-		86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTimeUtilities.m; sourceTree = "<group>"; };
-		86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZCStoreTableViewController.h; path = ../XYZCStoreTableViewController.h; sourceTree = "<group>"; };
-		86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZCStoreTableViewController.m; path = ../XYZCStoreTableViewController.m; sourceTree = "<group>"; };
+		86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZTimeUtilities.h; path = Utilites/XYZTimeUtilities.h; sourceTree = "<group>"; };
+		86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZTimeUtilities.m; path = Utilites/XYZTimeUtilities.m; sourceTree = "<group>"; };
+		86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZCStoreTableViewController.h; path = Locations/XYZCStoreTableViewController.h; sourceTree = "<group>"; };
+		86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZCStoreTableViewController.m; path = Locations/XYZCStoreTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +114,9 @@
 		863D886B19883CC900AE66A7 = {
 			isa = PBXGroup;
 			children = (
-				8619D36819C7448C00378416 /* HoursArray */,
 				86B66AE819BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png */,
 				86B66AE919BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png */,
 				86B66AE119BB6FEC00977EFC /* Main_iPad.storyboard */,
-				86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */,
-				86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */,
 				863D887D19883CC900AE66A7 /* Cat Food App */,
 				863D88A219883CC900AE66A7 /* Cat Food AppTests */,
 				863D887619883CC900AE66A7 /* Frameworks */,
@@ -158,21 +155,13 @@
 		863D887D19883CC900AE66A7 /* Cat Food App */ = {
 			isa = PBXGroup;
 			children = (
-				86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */,
-				86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */,
+				867F9BEC19D61AD10023C19B /* Utilities */,
+				867F9BEB19D61AAC0023C19B /* Locations */,
 				863D88B81988428B00AE66A7 /* XYZDiningHall.h */,
 				863D88B91988428B00AE66A7 /* XYZDiningHall.m */,
-				8619D36319C741EF00378416 /* XYZHourLoader.h */,
-				8619D36419C741EF00378416 /* XYZHourLoader.m */,
-				86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */,
-				86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */,
 				863D888619883CC900AE66A7 /* XYZAppDelegate.h */,
 				863D888719883CC900AE66A7 /* XYZAppDelegate.m */,
 				863D888919883CC900AE66A7 /* Main_iPhone.storyboard */,
-				86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */,
-				86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */,
-				863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */,
-				863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */,
 				863D889519883CC900AE66A7 /* Images.xcassets */,
 				863D887E19883CC900AE66A7 /* Supporting Files */,
 			);
@@ -206,6 +195,33 @@
 				863D88A519883CC900AE66A7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		867F9BEB19D61AAC0023C19B /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				86F8E65B1988EF7A0082C16D /* XYZCStoreTableViewController.h */,
+				86F8E65C1988EF7A0082C16D /* XYZCStoreTableViewController.m */,
+				86856F3A198C827D00DEF277 /* XYZNorrisTableViewController.h */,
+				86856F3B198C827D00DEF277 /* XYZNorrisTableViewController.m */,
+				86C7445E198D80CB000C69DA /* XYZCafesTableViewController.h */,
+				86C7445F198D80CB000C69DA /* XYZCafesTableViewController.m */,
+				863D88B219883CF000AE66A7 /* XYZDiningHallTableViewController.h */,
+				863D88B319883CF000AE66A7 /* XYZDiningHallTableViewController.m */,
+			);
+			name = Locations;
+			sourceTree = "<group>";
+		};
+		867F9BEC19D61AD10023C19B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8619D36819C7448C00378416 /* HoursArray.strings */,
+				8619D36319C741EF00378416 /* XYZHourLoader.h */,
+				8619D36419C741EF00378416 /* XYZHourLoader.m */,
+				86DDEFE4198C4A5600445725 /* XYZTimeUtilities.h */,
+				86DDEFE5198C4A5600445725 /* XYZTimeUtilities.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +306,7 @@
 			files = (
 				863D889619883CC900AE66A7 /* Images.xcassets in Resources */,
 				86B66AE219BB6FEC00977EFC /* Main_iPad.storyboard in Resources */,
-				8619D36919C7448C00378416 /* HoursArray in Resources */,
+				8619D36919C7448C00378416 /* HoursArray.strings in Resources */,
 				86B66AEA19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.18.02 PM.png in Resources */,
 				863D888B19883CC900AE66A7 /* Main_iPhone.storyboard in Resources */,
 				86B66AEB19BB7DFC00977EFC /* iOS Simulator Screen shot Sep 6, 2014, 1.35.55 PM.png in Resources */,
