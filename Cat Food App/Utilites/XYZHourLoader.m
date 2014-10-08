@@ -20,7 +20,7 @@
 
 -(void) loadHours{
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL
-                                                          URLWithString:@"https://raw.githubusercontent.com/anderoonies/Cat-Food-App/master/HoursArray"]];
+                                                          URLWithString:@"https://raw.githubusercontent.com/anderoonies/Cat-Food-App/master/Cat%20Food%20App/Utilites/HoursArray.txt"]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request
                                              returningResponse:nil error:nil];
     
